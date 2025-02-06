@@ -1,0 +1,180 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hoverScale {
+}
+.hoverScale:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.linkHover {
+  position: relative; /* Needed to position the pseudo-element */
+  transition: all 0.3s ease-out;
+}
+
+.linkHover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Start with no width */
+  height: 2px; /* The desired border height */
+  background-color: rgb(1, 255, 1); /* Border color */
+  transition: width 0.3s ease-out; /* Smooth transition for width */
+}
+
+.linkHover:hover {
+  cursor: pointer;
+  color: rgb(1, 255, 1);
+}
+
+.linkHover:hover::after {
+  width: 100%; /* Expands the border to full width on hover */
+}
+
+.buttons {
+  height: 44px;
+  width: fit-content;
+  padding: 0px 20px;
+  background-color: #f5efe7;
+  color: black;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-out;
+}
+.buttons:hover {
+  background-color: rgb(0, 163, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.animateImage {
+  animation: ImageAnimation 2s ease-in-out infinite alternate;
+}
+@keyframes ImageAnimation {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+/* -----------start--------- */
+/* this is for home page color wave  */
+.dot {
+  background-color: white;
+  animation: waveColor 2s ease-in-out infinite alternate;
+}
+
+/* Wave-like color animation */
+@keyframes waveColor {
+  0% {
+    background-color: rgb(251, 255, 0);
+  }
+  50% {
+    background-color: #ff0000; /* Bright green */
+  }
+  100% {
+    background-color: #ffd3d3;
+  }
+}
+
+/* Staggering the animations with delays */
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.dot:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.dot:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.dot:nth-child(6) {
+  animation-delay: 1s;
+}
+.dot:nth-child(7) {
+  animation-delay: 1.2s;
+}
+.dot:nth-child(8) {
+  animation-delay: 1.4s;
+}
+.dot:nth-child(9) {
+  animation-delay: 1.6s;
+}
+.dot:nth-child(10) {
+  animation-delay: 1.8s;
+}
+.dot:nth-child(11) {
+  animation-delay: 2s;
+}
+.dot:nth-child(12) {
+  animation-delay: 2.2s;
+}
+/* ---------end-------- */
+
+/* google font  */
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
