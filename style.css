@@ -39,6 +39,25 @@
   width: 100%; /* Expands the border to full width on hover */
 }
 
+/* ------------------- */
+/* common styles  */
+.box {
+  height: 85px;
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #edff00;
+  border-radius: 20px;
+  transition: transform 0.5s ease-out;
+}
+.box:hover {
+  transform: translateY(-10px);
+  cursor: default;
+}
+
 .buttons {
   height: 44px;
   width: fit-content;
@@ -56,6 +75,8 @@
   color: white;
   cursor: pointer;
 }
+
+/* ----------end-------- */
 
 .animateImage {
   animation: ImageAnimation 2s ease-in-out infinite alternate;
