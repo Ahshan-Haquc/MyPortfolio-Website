@@ -14,40 +14,42 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div
-      class="h-[100vh] w-[100vw] flex flex-col bg-gradient-to-r from-[#284065] to-[#213555]"
-    >
-      <div class="h-[70px] w-full center">
-        <div class="h-[60px] w-[95%] bg-[#213A59] rounded-3xl flex">
-          <div class="h-full w-1/4 flex">
-            <div class="h-full w-[60px] overflow-hidden center">
-              <img
-                class="h-[40px] w-[40px] rounded-[10px]"
-                src="MyImage.jpg"
-                alt=""
-              />
-            </div>
-            <div
-              class="h-full w-fit center ml-3 text-white text-2xl poppins-extralight"
-            >
-              Ahshanul Haquc
-            </div>
+  <body class="overflow-y-scroll overflow-x-hidden h-screen w-screen">
+    <!-- nav bar -->
+    <div class="h-[70px] w-full center fixed z-10">
+      <div class="h-[60px] w-[95%] bg-[#213A59] rounded-[40px] flex">
+        <div class="h-full w-1/4 flex">
+          <div class="h-full w-[60px] overflow-hidden center ml-1">
+            <img
+              class="h-[40px] w-[40px] rounded-[10px]"
+              src="MyImage.jpg"
+              alt=""
+            />
           </div>
           <div
-            class="h-full text-[#F5EFE7] w-3/4 flex justify-end items-center poppins-thin"
+            class="h-full w-fit center ml-3 text-white text-2xl poppins-extralight"
           >
-            <div class="h-full w-fit px-6 center linkHover">Home</div>
-            <div class="h-full w-fit px-6 center linkHover">About</div>
-            <div class="h-full w-fit px-6 center linkHover">Projects</div>
-            <div class="h-full w-fit px-6 center linkHover">Skills</div>
-            <div class="h-full w-fit px-6 center linkHover">Acheivements</div>
-            <div class="buttons poppins-thin">Contact me</div>
-            <!-- etate education dewa jete pare -->
+            Ahshanul Haquc
           </div>
         </div>
+        <div
+          class="h-full text-[#F5EFE7] w-3/4 mr-[6px] flex justify-end items-center poppins-thin"
+        >
+          <div class="h-full w-fit px-6 center linkHover">Home</div>
+          <div class="h-full w-fit px-6 center linkHover">About</div>
+          <div class="h-full w-fit px-6 center linkHover">Projects</div>
+          <div class="h-full w-fit px-6 center linkHover">Skills</div>
+          <div class="h-full w-fit px-6 center linkHover">Acheivements</div>
+          <div class="buttons poppins-thin">Contact me</div>
+          <!-- etate education dewa jete pare -->
+        </div>
       </div>
-      <div class="grow-[1] w-full">
+    </div>
+    <!-- this is section1 for home page  -->
+    <div
+      class="section h-[100vh] w-[100vw] pt-[10vh] flex flex-col bg-gradient-to-r from-[#284065] to-[#213555]"
+    >
+      <div class="h-screen w-screen">
         <div class="h-full w-full flex justify-center items-center">
           <!-- name part -->
           <div class="h-full w-1/2 flex flex-col justify-center">
@@ -191,6 +193,37 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Section 2: About -->
+    <div
+      class="section h-screen w-screen flex bg-gradient-to-r from-[#284065] to-[#213555] text-white"
+    >
+      <div class="w-1/2 h-full center">
+        <img class="h-[500px]" src="aboutPageImage.png" alt="" />
+      </div>
+      <div class="w-1/2 h-full"></div>
+    </div>
+
+    <!-- Section 3: Skills -->
+    <div
+      class="section h-screen w-screen flex justify-center items-center bg-gradient-to-r from-[#284065] to-[#213555] text-white"
+    >
+      <h1 class="text-5xl poppins-bold">Skills</h1>
+    </div>
+
+    <!-- Section 4: Projects -->
+    <div
+      class="section h-screen w-screen flex justify-center items-center bg-gradient-to-r from-[#213555] to-[#284065] text-white"
+    >
+      <h1 class="text-5xl poppins-bold">Projects</h1>
+    </div>
+
+    <!-- Section 5: Achievements -->
+    <div
+      class="section h-screen w-screen flex justify-center items-center bg-gradient-to-r from-[#284065] to-[#213555] text-white"
+    >
+      <h1 class="text-5xl poppins-bold">Achievements</h1>
     </div>
   </body>
 </html>
