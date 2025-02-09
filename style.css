@@ -203,3 +203,59 @@
   font-weight: 900;
   font-style: normal;
 }
+
+/* ---------acheivement------- */
+.acheivementSmallBox {
+  width: 92%;
+  height: 360px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #112749;
+  overflow: hidden;
+}
+
+/* -----------projects---------- */
+.projectSmallBox {
+  width: 600px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 30px;
+  /* background-color: #fb0049; */
+  background: linear-gradient(180deg, #fb0049, #d7003d);
+  color: #112749;
+  overflow: hidden;
+}
+.button2 {
+  width: 143px;
+  height: 40px;
+  /* border: 1px solid #213555; */
+  border-radius: 10px;
+  color: white;
+  background-color: #060606;
+  transition: all 0.3s ease;
+}
+.button2:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0px 0px 5px white;
+}
+
+/* --------skills---------- */
+.motionBox {
+  height: 170px;
+  width: 135px;
+  background-color: #213555;
+  border-radius: 20px;
+  border: 1px solid white;
+  box-shadow: 0px 0px 6px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.skillBoxs {
+  height: 470px;
+  width: 375px;
+  background-color: #fffce7;
+  border-radius: 20px;
+}
