@@ -259,3 +259,38 @@
   background-color: #fffce7;
   border-radius: 20px;
 }
+/* Animation */
+.scroll-container {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  height: 150px;
+  background-color: #112749;
+  align-items: center;
+}
+
+.scroll-wrapper {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+}
+
+.scrollItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.scrollItem img {
+  width: 80px;
+  height: 80px;
+  background-color: #21dd1e;
+  border-radius: 50%;
+}
