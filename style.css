@@ -218,13 +218,24 @@
 .projectSmallBox {
   width: 600px;
   height: 250px;
-  padding: 10px;
   border-radius: 30px;
-  /* background-color: #fb0049; */
-  background: linear-gradient(180deg, #fb0049, #d7003d);
-  color: #112749;
+  background-color: #112749;
+  border: 1px solid #fb7500;
+  color: #ffffff;
   overflow: hidden;
 }
+/* .projectSmallBox:nth-child(1) {
+  background: linear-gradient(180deg, #fb0049, #d7003d);
+}
+.projectSmallBox:nth-child(2) {
+  background: linear-gradient(180deg, #e8d5ff, #c8aee7);
+}
+.projectSmallBox:nth-child(3) {
+  background: linear-gradient(180deg, #e8d5ff, #c8aee7);
+}
+.projectSmallBox:nth-child(4) {
+  background: linear-gradient(180deg, #fb7500, #c75d00);
+} */
 .button2 {
   width: 143px;
   height: 40px;
@@ -259,6 +270,16 @@
   background-color: #fffce7;
   border-radius: 20px;
 }
+.upWhenHover {
+}
+.upWhenHover:hover {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
 /* Animation */
 .scroll-container {
   display: flex;
