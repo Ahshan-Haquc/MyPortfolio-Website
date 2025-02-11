@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ------common style------------- */
 .center {
   display: flex;
   justify-content: center;
@@ -14,8 +15,9 @@
   cursor: pointer;
 }
 
+/* ------------nav bar----------- */
 .linkHover {
-  position: relative; /* Needed to position the pseudo-element */
+  position: relative;
   transition: all 0.3s ease-out;
 }
 
@@ -26,13 +28,13 @@
   left: 0;
   width: 0; /* Start with no width */
   height: 2px; /* The desired border height */
-  background-color: rgb(1, 255, 1); /* Border color */
+  background-color: #f5efe7; /* Border color */
   transition: width 0.3s ease-out; /* Smooth transition for width */
 }
 
 .linkHover:hover {
   cursor: pointer;
-  color: rgb(1, 255, 1);
+  color: #f5efe7;
 }
 
 .linkHover:hover::after {
@@ -212,6 +214,25 @@
   border-radius: 30px;
   background-color: #112749;
   overflow: hidden;
+  position: relative;
+}
+
+.acheivementSmallBox::before {
+  content: "";
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(90deg, #112749, #05090f);
+  transition: all 0.8s ease-out;
+  z-index: 1;
+}
+.acheivementSmallBox:hover::before {
+  width: 100%;
+  border-top: 1px solid #fb7500;
+  border-bottom: 1px solid #fb7500;
+  border-radius: 30px;
 }
 
 /* -----------projects---------- */
@@ -221,9 +242,11 @@
   border-radius: 30px;
   background-color: #112749;
   border: 1px solid #fb7500;
-  color: #ffffff;
   overflow: hidden;
+  z-index: 1;
+  position: relative;
 }
+
 /* .projectSmallBox:nth-child(1) {
   background: linear-gradient(180deg, #fb0049, #d7003d);
 }
@@ -252,9 +275,10 @@
 }
 
 /* --------skills---------- */
+
 .motionBox {
   height: 170px;
-  width: 135px;
+  min-width: 135px;
   background-color: #213555;
   border-radius: 20px;
   border: 1px solid white;
@@ -263,55 +287,90 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  position: absolute;
+  right: -10%;
+  /* animation: motionAllBoxsRightToLeft 28s linear infinite; */
+  animation: motionAllBoxsRightToLeft 28s linear infinite,
+    upDownMoveMotion 3s linear infinite alternate;
 }
-.skillBoxs {
+
+@keyframes motionAllBoxsRightToLeft {
+  0% {
+    right: -10%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+@keyframes upDownMoveMotion {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+.motionBox:nth-child(1) {
+  animation-delay: 0s;
+}
+.motionBox:nth-child(2) {
+  animation-delay: 4s;
+}
+.motionBox:nth-child(3) {
+  animation-delay: 8s;
+}
+.motionBox:nth-child(4) {
+  animation-delay: 12s;
+}
+.motionBox:nth-child(5) {
+  animation-delay: 16s;
+}
+.motionBox:nth-child(6) {
+  animation-delay: 20s;
+}
+.motionBox:nth-child(7) {
+  animation-delay: 24s;
+}
+.motionBox:nth-child(8) {
+  animation-delay: 24s;
+}
+.motionBox:nth-child(9) {
+  animation-delay: 28s;
+}
+
+.skillMainBox {
   height: 470px;
   width: 375px;
   background-color: #fffce7;
   border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.skillSmallBox {
+  height: 100%; /* h-[75%] */
+  width: 100%;
+  font-family: "Poppins", sans-serif; /* poppins-bold */
+  font-weight: bold; /* Equivalent to bold text */
+  color: #213555; /* text-[#213555] */
+  background-color: #ffec58; /* bg-[#FFEC58] */
+  font-size: 1.5rem; /* text-2xl (2xl = 1.5rem) */
+  border-top-left-radius: 40px; /* rounded-tl-[40px] */
+  border-top-right-radius: 40px; /* rounded-tr-[40px] */
+  padding-left: 1.5rem; /* pl-6 (6 = 1.5rem) */
+  padding-top: 2rem; /* pt-8 (8 = 2rem) */
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  gap: 0.75rem; /* gap-3 (3 = 0.75rem) */
+  transition: all 0.5s ease-in-out 0.3s;
+  position: absolute;
+  top: 25%;
+  left: 0%;
 }
 .upWhenHover {
-}
-.upWhenHover:hover {
   border-radius: 20px;
   position: absolute;
-  top: 0;
+  top: 0%;
   height: 100%;
   width: 100%;
-}
-
-/* Animation */
-.scroll-container {
-  display: flex;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-  position: relative;
-  height: 150px;
-  background-color: #112749;
-  align-items: center;
-}
-
-.scroll-wrapper {
-  display: flex;
-  gap: 20px;
-  position: absolute;
-}
-
-.scrollItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-}
-
-.scrollItem img {
-  width: 80px;
-  height: 80px;
-  background-color: #21dd1e;
-  border-radius: 50%;
 }
