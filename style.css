@@ -212,7 +212,10 @@
   height: 360px;
   padding: 20px;
   border-radius: 30px;
-  background-color: #112749;
+  background: linear-gradient(90deg, #112749, #05090f);
+  border-top: 1px solid #fb7500;
+  border-bottom: 1px solid #fb7500;
+  /* background-color: #112749; */
   overflow: hidden;
   position: relative;
 }
@@ -224,13 +227,14 @@
   position: absolute;
   top: 0%;
   left: 0%;
-  background: linear-gradient(90deg, #112749, #05090f);
+  background-color: #112749;
+  /* background: linear-gradient(90deg, #112749, #05090f); */
   transition: all 0.8s ease-out;
   z-index: 1;
 }
 .acheivementSmallBox:hover::before {
   width: 100%;
-  border-top: 1px solid #fb7500;
+  border-top: 1px solid #fbf700;
   border-bottom: 1px solid #fb7500;
   border-radius: 30px;
 }
@@ -243,8 +247,18 @@
   background-color: #112749;
   border: 1px solid #fb7500;
   overflow: hidden;
-  z-index: 1;
   position: relative;
+  z-index: 10;
+}
+.projectSmallBox::before {
+  content: "";
+  width: 605px;
+  height: 285px;
+
+  position: absolute;
+  top: 0px;
+  right: -0px;
+  /* z-index: -1; */
 }
 
 /* .projectSmallBox:nth-child(1) {
@@ -288,7 +302,7 @@
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  right: -10%;
+  right: -15%;
   /* animation: motionAllBoxsRightToLeft 28s linear infinite; */
   animation: motionAllBoxsRightToLeft 28s linear infinite,
     upDownMoveMotion 3s linear infinite alternate;
