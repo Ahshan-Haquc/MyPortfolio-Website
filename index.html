@@ -19,7 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
-  <body class="overflow-y-scroll overflow-x-hidden h-screen w-screen">
+  <body class="overflow-y-scroll overflow-x-hidden h-fit md:h-screen w-screen">
     <!-- nav bar -->
     <div class="h-[60px] w-full center fixed z-50">
       <div class="h-full w-[95%] bg-[#112749] rounded-[40px] flex">
@@ -88,10 +88,12 @@
     </div>
     <!-- Section 1: home page  -->
     <div
-      class="section h-[100vh] w-[100vw] pt-[10vh] flex flex-col bg-gradient-to-r from-[#284065] to-[#213555]"
+      class="section h-[100vh] w-[100vw] flex flex-col bg-gradient-to-r from-[#284065] to-[#213555] md:pt-[10vh]"
     >
-      <div class="h-screen w-screen center">
-        <div class="h-full w-full flex justify-center items-center">
+      <div class="md:h-screen h-fit w-screen center">
+        <div
+          class="h-full w-full flex flex-col flex-wrap-reverse justify-center items-center md:flex-row md:flex-wrap"
+        >
           <!-- name part (left side) -->
           <div class="h-full w-1/2 flex flex-col justify-center items-center">
             <!-- name text part -->
@@ -992,7 +994,7 @@
     </div>
     <!-- Section 6: Contact -->
     <div
-      class="section h-screen w-screen flex justify-center items-center bg-gradient-to-r from-[#284065] to-[#213555] text-white"
+      class="section h-screen w-screen flex justify-center items-center bg-gradient-to-r from-[#284065] to-[#213555] text-white flex-col md:flex-row"
     >
       <!-- left side part -->
       <div class="w-1/2 h-full center flex-col p-12">
