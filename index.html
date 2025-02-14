@@ -21,8 +21,8 @@
   </head>
   <body class="overflow-y-scroll overflow-x-hidden h-screen w-screen">
     <!-- nav bar -->
-    <div class="h-[70px] w-full center fixed z-50">
-      <div class="h-full w-[95%] bg-[#213A59] rounded-[40px] flex">
+    <div class="h-[60px] w-full center fixed z-50">
+      <div class="h-full w-[95%] bg-[#112749] rounded-[40px] flex">
         <div class="h-full w-1/4 flex">
           <div class="h-full w-[60px] overflow-hidden center ml-1">
             <img
@@ -40,12 +40,22 @@
         <div
           class="h-full text-[#F5EFE7] w-3/4 mr-[6px] flex justify-end items-center poppins-thin"
         >
-          <div class="h-full w-fit px-6 center linkHover">Home</div>
+          <div
+            class="h-full w-fit px-6 center linkHover"
+            onclick="window.location.href='index.html'"
+          >
+            Home
+          </div>
           <div class="h-full w-fit px-6 center linkHover">About</div>
           <div class="h-full w-fit px-6 center linkHover">Career</div>
           <div class="h-full w-fit px-6 center linkHover">Projects</div>
           <div class="h-full w-fit px-6 center linkHover">Skills</div>
-          <div class="h-full w-fit px-6 center linkHover">Acheivements</div>
+          <div
+            class="h-full w-fit px-6 center linkHover"
+            onclick="window.location.href='acheivement.html'"
+          >
+            Acheivements
+          </div>
           <div class="buttons poppins-thin">Contact me</div>
           <!-- etate education dewa jete pare -->
         </div>
@@ -55,10 +65,10 @@
     <div
       class="section h-[100vh] w-[100vw] pt-[10vh] flex flex-col bg-gradient-to-r from-[#284065] to-[#213555]"
     >
-      <div class="h-screen w-screen">
+      <div class="h-screen w-screen center">
         <div class="h-full w-full flex justify-center items-center">
-          <!-- name part -->
-          <div class="h-full w-1/2 flex flex-col justify-center">
+          <!-- name part (left side) -->
+          <div class="h-full w-1/2 flex flex-col justify-center items-center">
             <!-- name text part -->
             <div class="w-full flex flex-col items-center">
               <div
@@ -148,7 +158,7 @@
               </div>
             </div>
           </div>
-          <!-- picture part  -->
+          <!-- picture part (rigth side)  -->
           <div class="h-full w-1/2 center">
             <div class="relative">
               <div>
@@ -268,7 +278,7 @@
       class="section min-h-screen max-h-fit w-screen center flex-col bg-gradient-to-r from-[#284065] to-[#213555] text-white"
     >
       <div
-        class="w-full h-2/6 center flex-col poppins-bold text-5xl mt-[15vh] mb-[60px]"
+        class="w-full h-2/6 center flex-col poppins-bold text-5xl mt-[15vh] mb-[60px] bg-[#112749]"
       >
         <div>My <span class="text-[#EDFF00]">Academic</span> &</div>
         <div><span class="text-[#EDFF00]">Profesional</span> Journey</div>
@@ -347,7 +357,7 @@
       class="section max-h-fit min-h-screen w-screen flex justify-center items-center flex-col bg-gradient-to-r from-[#284065] to-[#213555] text-white"
     >
       <div
-        class="w-full h-fit center flex-col poppins-bold text-5xl mt-[15vh] mb-[60px]"
+        class="w-full h-fit center flex-col poppins-bold text-5xl mt-[15vh] mb-[60px] bg-[#112749]"
       >
         <div>My <span class="text-[#EDFF00]">Projects</span></div>
       </div>
@@ -862,115 +872,94 @@
       class="section h-fit w-screen flex justify-center items-center flex-col bg-gradient-to-r from-[#284065] to-[#213555] text-white"
     >
       <div
-        class="w-full h-fit center flex-col poppins-bold text-5xl mt-[15vh] mb-[60px]"
+        class="w-full h-fit center flex-col poppins-bold text-5xl mt-[15vh] mb-[60px] bg-[#112749]"
       >
         <div>My <span class="text-[#EDFF00]">Award</span> &</div>
-        <div><span class="text-[#EDFF00]">Acheivement</span> Journey</div>
+        <div><span class="text-[#EDFF00]">Activities</span> Journey</div>
       </div>
-      <div class="h-fit w-full center flex-col gap-8">
-        <!-- box -->
-        <div class="acheivementSmallBox flex gap-6">
-          <div class="h-full min-w-[450px] z-10">
-            <!-- <img
-              class="h-full object-contain rounded-md"
-              src="/images/VC award.jpg"
-              alt=""
-            /> -->
+      <div class="h-fit w-full center flex-wrap gap-8">
+        <!-- new box -->
+        <div
+          class="acheivementSmallBox w-[500px] h-[415px] center flex-col p-3 bg-[#112749] overflow-hidden"
+        >
+          <div
+            class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
+          >
+            IDPC - 2024
+          </div>
+          <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
             <img
-              class="h-full min-w-[450px] z-10"
+              class="rounded-md object-cover"
               src="images/VC award.jpg"
               alt="VC Award"
             />
           </div>
-          <div class="h-full flex-grow z-10">
-            <div class="h-fit w-full flex justify-between">
-              <div class="poppins-bold text-2xl text-[#EDFF00]">
-                VC's Cirtificate
-              </div>
-              <div class="poppins-regular text-gray-300">04-07-2024</div>
-            </div>
-            <div class="h-fit w-full poppins-regular mt-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              ipsa ab exercitationem vitae. Eius minus quia sed tenetur quaerat,
-              maiores aliquid eligendi nesciunt, ipsum a minima corporis
-              exercitationem dolore! Voluptate placeat numquam deserunt
-              delectus, iusto eius rem saepe eos odit quisquam, ratione
-              doloremque facilis. Et ex provident consequatur ipsa animi?
-            </div>
+        </div>
+        <!-- new box -->
+        <div
+          class="acheivementSmallBox w-[500px] h-[415px] center flex-col p-3 bg-[#112749] overflow-hidden"
+        >
+          <div
+            class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
+          >
+            IDPC - 2024
+          </div>
+          <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
+            <img
+              class="rounded-md object-cover"
+              src="images/IDPC.jpg"
+              alt="VC Award"
+            />
           </div>
         </div>
-        <!-- box -->
-        <div class="acheivementSmallBox flex gap-9">
-          <div class="h-full flex-grow z-10">
-            <div class="h-fit w-full flex justify-between">
-              <div class="poppins-bold text-2xl text-[#EDFF00]">
-                Ghuri Fest - 2024
-              </div>
-              <div class="poppins-regular text-gray-300">04-07-2024</div>
-            </div>
-            <div class="h-fit w-full poppins-regular mt-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              ipsa ab exercitationem vitae. Eius minus quia sed tenetur quaerat,
-              maiores aliquid eligendi nesciuntpsum
-            </div>
+        <!-- new box -->
+        <div
+          class="acheivementSmallBox w-[500px] h-[415px] center flex-col p-3 bg-[#112749] overflow-hidden"
+        >
+          <div
+            class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
+          >
+            Ghuri Uthsob
           </div>
-          <div class="h-full min-w-[450px] z-10">
+          <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
             <img
-              class="h-full object-contain rounded-md"
+              class="rounded-md object-cover"
               src="images/GruriUthsob.JPG"
-              alt="Ghuri Fest"
+              alt="VC Award"
             />
           </div>
         </div>
-        <!-- box -->
-        <div class="acheivementSmallBox flex gap-9">
-          <div class="h-full min-w-[450px] z-10">
+        <!-- new box -->
+        <div
+          class="acheivementSmallBox w-[500px] h-[415px] center flex-col p-3 bg-[#112749] overflow-hidden"
+        >
+          <div
+            class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
+          >
+            Tex Fest
+          </div>
+          <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
             <img
-              class="h-full object-contain rounded-md"
+              class="rounded-md object-cover"
               src="images/TexFestDanceImage.JPG"
-              alt="Tex Fest"
+              alt="VC Award"
             />
           </div>
-          <div class="h-full flex-grow z-10">
-            <div class="h-fit w-full flex justify-between">
-              <div class="poppins-bold text-2xl text-[#EDFF00]">Tex Fest</div>
-              <div class="poppins-regular text-gray-300">04-07-2024</div>
-            </div>
-            <div class="h-fit w-full poppins-regular mt-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              ipsa ab exercitationem vitae. Eius minus quia sed tenetur quaerat,
-              maiores aliquid eligendi nesciunt, ipsum a minima corporis
-              exercitationem dolore! Voluptate placeat numquam deserunt
-              delectus, iusto eius rem saepe eos odit quisquam, ratione
-              doloremque facilis. Et ex provident consequatur ipsa animi?
-            </div>
-          </div>
         </div>
-        <!-- box -->
-        <div class="acheivementSmallBox flex gap-9">
-          <div class="h-full flex-grow z-10">
-            <div class="h-fit w-full flex justify-between">
-              <div class="poppins-bold text-2xl text-[#EDFF00]">
-                First Attending Dance at University
-              </div>
-              <div class="poppins-regular text-gray-300">04-07-2024</div>
-            </div>
-            <div class="h-fit w-full poppins-regular mt-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              ipsa ab exercitationem vitae. Eius minus quia sed tenetur quaerat,
-              maiores aliquid eligendi nesciuntpsum
-            </div>
+        <!-- new box -->
+        <div
+          class="acheivementSmallBox w-[500px] h-[415px] center flex-col p-3 bg-[#112749] overflow-hidden shadow-xl"
+        >
+          <div
+            class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
+          >
+            Victory Day Programme
           </div>
-          <div class="h-full min-w-[450px] z-10">
-            <!-- ------------------ -->
-            <!-- ---------------------------------------- -->
-            <!-- ei pic er pisone Seikh mojib er pic ase -->
-            <!-- sei pic erase korte hobe -->
-            <!-- ------------------------------  -->
+          <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
             <img
-              class="h-full object-contain rounded-md"
+              class="rounded-md object-cover"
               src="images/FirstDance.JPG"
-              alt="Ghuri Fest"
+              alt="VC Award"
             />
           </div>
         </div>
@@ -1043,13 +1032,10 @@
           <span class="poppins-bold text-[#EDFF00]">Let's Talk</span>
         </div>
         <div class="h-fit w-full poppins-thin text-sm">
-          I'm Ahshanul Haquc, a creative and detail-oriented Full-Stack Web
-          Developer with a passion for building sleek, responsive, and
-          user-friendly websites. Whether it's crafting interactive front-end
-          designs or developing robust back-end solutions, I love turning
-          complex problems into simple, elegant code. With expertise in
-          JavaScript, Node.js, and MongoDB, I thrive on bringing innovative
-          ideas to life and creating seamless digital experiences.
+          Feel free to reach out! Whether you have a project idea, a
+          collaboration opportunity, or just want to chat about web development
+          and technology, I’d love to connect. Let’s turn ideas into reality and
+          build something amazing together!
         </div>
         <div class="h-9 w-full poppins-regular text-xl flex items-center">
           <img class="h-9 w-9 mr-4" src="images/contact.png" alt="" />
@@ -1068,4 +1054,35 @@
     <!-- js file  -->
     <script src="script.js"></script>
   </body>
+  <footer class="bg-gray-900 text-white py-6">
+    <div
+      class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4"
+    >
+      <div class="text-center md:text-left">
+        <h2 class="text-xl font-semibold">Ahshanul Haque</h2>
+        <p class="text-gray-400 text-sm">
+          Web Developer | Passionate about coding
+        </p>
+      </div>
+
+      <div class="flex flex-col space-x-4 mt-4 md:mt-0">
+        <div class="ml-4 text-gray-500">Quick access</div>
+        <div class="flex space-x-4 mt-4 md:mt-0">
+          <a href="#" class="hover:text-blue-400">Home</a>
+          <a href="#about" class="hover:text-blue-400">About</a>
+          <a href="#skills" class="hover:text-blue-400">Career</a>
+          <a href="#projects" class="hover:text-blue-400">Projects</a>
+          <a href="#projects" class="hover:text-blue-400">Skills</a>
+          <a href="#projects" class="hover:text-blue-400">Acheivement</a>
+          <a href="#contact" class="hover:text-blue-400">Contact</a>
+        </div>
+      </div>
+
+      <div class="mt-4 md:mt-0">
+        <p class="text-gray-400 text-sm">
+          © 2025 Ahshanul Haque. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
 </html>
