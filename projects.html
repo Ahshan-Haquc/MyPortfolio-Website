@@ -24,8 +24,8 @@
   >
     <!-- nav bar -->
     <div class="h-[60px] w-full center fixed z-50">
-      <div class="h-full w-[95%] bg-[#112749] rounded-[40px] flex">
-        <div class="h-full w-1/4 flex">
+      <div class="h-full w-[95%] bg-[#112749] rounded-[40px] flex mr-2 md:mr-0">
+        <div class="h-full w-3/4 md:w-1/4 flex">
           <div class="h-full w-[60px] overflow-hidden center ml-1">
             <img
               class="h-[40px] w-[40px] rounded-[10px]"
@@ -34,13 +34,25 @@
             />
           </div>
           <div
-            class="h-full w-fit center ml-3 text-white text-2xl poppins-extralight"
+            class="h-full w-fit center ml-3 text-white text-lg md:text-2xl poppins-extralight"
           >
             Ahshanul Haquc
           </div>
         </div>
+        <!-- right side nav  -->
+        <!-- for phone -->
         <div
-          class="h-full text-[#F5EFE7] w-3/4 mr-[6px] flex justify-end items-center poppins-thin"
+          class="h-full text-[#F5EFE7] w-1/4 flex justify-end items-center poppins-thin flex md:hidden"
+        >
+          <i
+            class="fa-solid fa-circle-chevron-down fa-2x mr-3"
+            id="menuIcon"
+            onclick="toggleMenu()"
+          ></i>
+        </div>
+        <!-- for desktop -->
+        <div
+          class="h-full text-[#F5EFE7] w-3/4 mr-[6px] flex justify-end items-center poppins-thin hidden md:flex"
         >
           <div
             class="h-full w-fit px-6 center linkHover"
@@ -88,18 +100,69 @@
         </div>
       </div>
     </div>
+    <!-- -----------------  -->
+    <!-- showing popup while clicking menu in phone  -->
+    <div
+      class="h-screen w-screen bg-[#213555] text-white pt-[80px] fixed top-0 left-[-400px] z-40 flex flex-col justify-start items-center poppins-regular text-xl duration-500 md:hidden"
+      id="menuDiv"
+    >
+      <div
+        class="h-10 w-full center linkHover my-3"
+        onclick="window.location.href='index.html'"
+      >
+        Home
+      </div>
+      <div
+        class="h-10 w-full center linkHover my-3"
+        onclick="window.location.href='about.html'"
+      >
+        About
+      </div>
+      <div
+        class="h-10 w-full center linkHover my-3"
+        onclick="window.location.href='career.html'"
+      >
+        Career
+      </div>
+      <div
+        class="h-10 w-full center linkHover my-3"
+        onclick="window.location.href='projects.html'"
+      >
+        Projects
+      </div>
+      <div
+        class="h-10 w-full center linkHover my-3"
+        onclick="window.location.href='skills.html'"
+      >
+        Skills
+      </div>
+      <div
+        class="h-10 w-full center linkHover my-3"
+        onclick="window.location.href='acheivement.html'"
+      >
+        Acheivements
+      </div>
+      <div
+        class="h-10 w-full center linkHover my-3"
+        onclick="window.location.href='contact.html'"
+      >
+        Contact me
+      </div>
+    </div>
+    <!-- ----------------end--------- -->
+
     <!-- Section -->
     <div
       class="section max-h-fit min-h-screen w-screen flex justify-center items-center flex-col bg-gradient-to-r from-[#284065] to-[#213555] text-white mb-5"
     >
       <div
-        class="w-full h-fit center flex-col poppins-bold text-5xl mt-[15vh] mb-[60px] bg-[#112749]"
+        class="w-full h-fit center flex-col poppins-bold text-5xl mt-[80px] md:mt-[15vh] mb-[60px] bg-none md:bg-[#112749]"
       >
         <div>My <span class="text-[#EDFF00]">Projects</span></div>
       </div>
       <div class="h-fit w-full center flex-wrap gap-8">
         <!-- box -->
-        <div class="projectSmallBox flex items-center gap-6">
+        <div class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0">
           <div class="h-full w-1/3 bg-white rounded-tl-2xl rounded-bl-2xl z-10">
             <img
               class="h-full object-cover rounded-md"
@@ -113,7 +176,7 @@
                 Green University Student Bridge
               </div>
             </div>
-            <div class="h-fit w-full poppins-normal text-sm mt-2 pr-3">
+            <div class="h-fit w-full poppins-normal text-[10px] mt-2 pr-3">
               Green University StudentBridge is a web platform designed to help
               university students easily find essential services in one place.
               It offers features like room rentals (To-let), buying & selling,
@@ -126,7 +189,7 @@
         </div>
 
         <!-- box -->
-        <div class="projectSmallBox flex items-center gap-6">
+        <div class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0">
           <div class="h-full w-1/3 bg-white rounded-tl-2xl rounded-bl-2xl">
             <img
               class="h-full object-cover rounded-md"
@@ -140,7 +203,7 @@
                 Personal Portfolio
               </div>
             </div>
-            <div class="h-fit w-full poppins-normal text-sm mt-2 pr-3">
+            <div class="h-fit w-full poppins-normal text-[10px] mt-2 pr-3">
               This is my personal portfolio website where I showcase my skills,
               projects, and experiences as a web developer. It includes my
               background, tech stack, past work, and ways to contact me. Built
@@ -153,7 +216,7 @@
         </div>
 
         <!-- box -->
-        <div class="projectSmallBox flex items-center gap-6">
+        <div class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0">
           <div class="h-full w-1/3 bg-white rounded-tl-2xl rounded-bl-2xl">
             <img
               class="h-full object-cover rounded-md"
@@ -165,7 +228,7 @@
             <div class="h-fit w-full flex justify-between">
               <div class="poppins-bold text-2xl text-[#fb7500]">PrintMate</div>
             </div>
-            <div class="h-fit w-full poppins-normal text-sm mt-2 pr-3">
+            <div class="h-fit w-full poppins-normal text-[10px] mt-2 pr-3">
               Print Mate - fast and easy online printing service for university
               students. Upload your PDF, see the total pages and cost, pay via
               bKash, and get your printed documents delivered on campus. Simple,
@@ -178,7 +241,7 @@
         </div>
 
         <!-- box -->
-        <div class="projectSmallBox flex items-center gap-6">
+        <div class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0">
           <div class="h-full w-1/3 bg-white rounded-tl-2xl rounded-bl-2xl">
             <img
               class="h-full object-cover rounded-md"
@@ -192,7 +255,7 @@
                 1Munite Quiz
               </div>
             </div>
-            <div class="h-fit w-full poppins-normal text-sm mt-2 pr-3">
+            <div class="h-fit w-full poppins-normal text-[10px] mt-2 pr-3">
               1Muinite Quiz is a fun and interactive quiz type of game where
               users can play multiple quize game. The interesting feature is all
               user have to finish their playing between 1 Munite.
@@ -204,6 +267,7 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
   <footer class="bg-gray-900 text-white py-6">
     <div
@@ -216,9 +280,9 @@
         </p>
       </div>
 
-      <div class="flex flex-col space-x-4 mt-4 md:mt-0">
-        <div class="ml-4 text-gray-500">Quick access</div>
-        <div class="flex space-x-4 mt-4 md:mt-0">
+      <div class="center flex-col mt-4 md:mt-0 text-[11px] md:text-[15px]">
+        <div class="text-gray-500">Quick access</div>
+        <div class="center gap-3 md:gap-5 mt-2 md:mt-0">
           <a href="#" class="hover:text-blue-400">Home</a>
           <a href="#about" class="hover:text-blue-400">About</a>
           <a href="#skills" class="hover:text-blue-400">Career</a>
