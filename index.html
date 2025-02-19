@@ -151,57 +151,59 @@
     <!-- ----------------end--------- -->
     <!-- Section 1: home page  -->
     <div
-      class="section h-[100vh] w-[100vw] flex flex-col bg-gradient-to-r from-[#284065] to-[#213555] md:pt-[10vh]"
+      class="section min-h-[100vh] max-h-fit w-[100vw] flex flex-col bg-gradient-to-r from-[#284065] to-[#213555] md:pt-[5vh]"
     >
       <div class="md:h-screen h-fit w-screen center">
         <div
-          class="h-full w-full flex flex-col flex-wrap-reverse justify-center items-center md:flex-row md:flex-wrap"
+          class="h-full w-full flex flex-col justify-center items-center md:flex-row"
         >
           <!-- name part (left side) -->
-          <div class="h-full w-1/2 flex flex-col justify-center items-center">
+          <div
+            class="h-1/2 w-full md:h-full md:w-1/2 flex flex-col justify-center items-center mt-[80px] md:mt-0"
+          >
             <!-- name text part -->
             <div class="w-full flex flex-col items-center">
               <div
-                class="w-full h-3/4 pl-10 flex flex-col items-end justify-end"
+                class="w-full h-3/4 p-3 md:pl-10 flex flex-col items-end justify-end"
               >
                 <!-- <div class="w-full h-[200px] bg-gray-500 flex"> -->
                 <div class="w-full h-[200px] relative flex">
                   <div
-                    class="h-full w-[180px] text-[#F5EFE7] text-[150px] poppins-black relative bottom-0 left-0"
+                    class="h-full w-[80px] md:w-[180px] text-[#F5EFE7] text-[70px] md:text-[150px] poppins-black relative bottom-0 left-0"
                   >
                     Hi
                   </div>
-                  <div class="h-full grow pt-[77px]">
+                  <div class="h-full grow pt-6 md:pt-[77px]">
                     <div
-                      class="w-full h-fit poppins-extrabold text-2xl text-[#F5EFE7]"
+                      class="w-full h-fit poppins-extrabold text-xl md:text-2xl text-[#F5EFE7]"
                     >
                       This is...
                     </div>
                     <div
-                      class="w-full h-fit poppins-black text-[50px] text-[#edff00]"
+                      class="w-full h-fit poppins-black text-xl md:text-[50px] text-[#edff00] md:pt-[25px]"
                     >
                       Ahshanul Haquc
                     </div>
                   </div>
                 </div>
                 <div
-                  class="w-full h-[50px] mb-5 poppins-extrabold text-3xl text-[#F5EFE7]"
+                  class="w-full h-[50px] mb-1 md:mb-5 poppins-extrabold text-md md:text-3xl text-[#F5EFE7]"
                 >
                   Passionate Full-Stack Web Developer |<br />Turning Ideas into
                   Interactive Experiences
                 </div>
               </div>
               <div
-                class="w-full h-1/4 pl-10 pt-12 poppins-thin text-white flex items-center"
+                class="w-full h-1/4 p-3 md:pl-10 md:pt-12 poppins-thin text-sm md:text-xl text-white flex items-center"
               >
                 I specialize in building responsive and dynamic websites using
                 modern technologies like JavaScript, Node.js, and MongoDB.
               </div>
             </div>
             <!-- Follow icons -->
-            <div class="h-1/5 w-full pl-10 pt-6">
+            <div class="h-1/5 w-full pl-3 pt-1 md:pl-10 md:pt-6">
               <div class="poppins-thin text-white">Follow me on :</div>
-              <div class="mt-2 w-full h-11 flex gap-4 items-center">
+              <div class="mt-2 w-full h-11 flex gap-2 md:gap-4 items-center">
                 <div class="animateImage">
                   <img
                     class="h-9 w-9 rounded-full hoverScale"
@@ -249,11 +251,11 @@
             </div>
           </div>
           <!-- picture part (rigth side)  -->
-          <div class="h-full w-1/2 center">
+          <div class="h-1/2 w-full md:h-full md:w-1/2 center">
             <div class="relative">
               <div>
                 <img
-                  class="h-[300px] w-[300px] rounded-full border-[2px]"
+                  class="h-[200px] md:h-[300px] w-[200px] md:w-[300px] rounded-full border-[2px]"
                   src="MyImage.jpg"
                   alt=""
                 />
@@ -303,24 +305,28 @@
 
     <!-- Section 2: About -->
     <div
-      class="section h-screen w-screen flex bg-gradient-to-r from-[#284065] to-[#213555] text-white"
+      class="section min-h-screen max-h-fit w-screen md:pt[5vh] flex flex-col md:flex-row bg-gradient-to-r from-[#284065] to-[#213555] text-white"
     >
       <!-- left side part -->
-      <div class="w-1/2 h-full center">
-        <img class="h-[500px]" src="aboutPagePic.png" alt="" />
+      <div class="w-full h-1/2 md:w-1/2 md:h-full center">
+        <img class="h-[300px] md:h-[500px]" src="aboutPagePic.png" alt="" />
       </div>
       <!-- right side part -->
-      <div class="w-1/2 h-full flex flex-col justify-center gap-5 pr-[60px]">
-        <div class="h-fit w-full poppins-regular text-xl">
+      <div
+        class="w-full h-1/2 p-3 md:w-1/2 md:h-full flex flex-col justify-center items-center gap-1 md:gap-5 md:pr-[60px]"
+      >
+        <div class="h-fit w-full poppins-regular text-sm md:text-xl">
           <span>-</span>About me
         </div>
-        <div class="h-fit w-full text-5xl">
+        <div class="h-fit w-full text-xl md:text-5xl">
           <span class="poppins-bold">Who is</span>&nbsp;<span
             class="poppins-regular text-[#EDFF00]"
             >Ahshanul Haquc ?</span
           >
         </div>
-        <div class="h-fit w-full poppins-thin text-sm">
+        <div
+          class="h-fit w-full poppins-thin text-sm text-gray-300 md:text-white"
+        >
           I'm Ahshanul Haquc, a creative and detail-oriented Full-Stack Web
           Developer with a passion for building sleek, responsive, and
           user-friendly websites. Whether it's crafting interactive front-end
@@ -329,33 +335,39 @@
           JavaScript, Node.js, and MongoDB, I thrive on bringing innovative
           ideas to life and creating seamless digital experiences.
         </div>
-        <div class="h-fit w-full flex gap-3">
+        <div class="h-fit w-full mt-5 md:mt-0 flex gap-1 md:gap-3">
           <div class="box">
-            <div class="poppins-black text-4xl">5+</div>
-            <div class="poppins-regular">Project Completed</div>
+            <div class="poppins-black text-4xl">4+</div>
+            <div class="poppins-regular text-[8px] md:text-[16px]">
+              Project Completed
+            </div>
           </div>
           <div class="box">
             <div class="poppins-black text-4xl">0+</div>
-            <div class="poppins-regular">Industry Covered</div>
+            <div class="poppins-regular text-[8px] md:text-[16px]">
+              Industry Covered
+            </div>
           </div>
           <div class="box">
             <div class="poppins-black text-4xl">0+</div>
-            <div class="poppins-regular">Years of Experience</div>
+            <div class="poppins-regular text-[8px] md:text-[16px]">
+              Years of Experience
+            </div>
           </div>
         </div>
-        <div class="h-fit w-full mt-[5.5rem] flex gap-2">
+        <div class="h-fit w-full mt-5 md:mt-[5.5rem] flex gap-2">
           <div
-            class="buttons bg-[#00A300] text-white poppins-normal hoverScale"
+            class="buttons w-[150px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
           >
             My Journey
           </div>
           <div
-            class="buttons bg-[#00A300] text-white poppins-normal hoverScale"
+            class="buttons w-[150px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
           >
             My Interests
           </div>
           <div
-            class="buttons bg-[#00A300] text-white poppins-normal hoverScale"
+            class="buttons w-[200px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
           >
             Why contact me ?
           </div>
@@ -964,15 +976,15 @@
       class="section h-fit w-screen flex justify-center items-center flex-col bg-gradient-to-r from-[#284065] to-[#213555] text-white"
     >
       <div
-        class="w-full h-fit center flex-col poppins-bold text-5xl mt-[15vh] mb-[60px] bg-[#112749]"
+        class="w-full h-fit center flex-col poppins-bold text-xl md:text-5xl mt-[15vh] mb-[60px] bg-[#112749]"
       >
         <div>My <span class="text-[#EDFF00]">Award</span> &</div>
         <div><span class="text-[#EDFF00]">Activities</span> Journey</div>
       </div>
-      <div class="h-fit w-full center flex-wrap gap-8">
+      <div class="h-fit w-full center flex-wrap gap-1 md:gap-8">
         <!-- new box -->
         <div
-          class="acheivementSmallBox w-[500px] h-[415px] center flex-col p-3 bg-[#112749] overflow-hidden"
+          class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden"
         >
           <div
             class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
@@ -989,7 +1001,7 @@
         </div>
         <!-- new box -->
         <div
-          class="acheivementSmallBox w-[500px] h-[415px] center flex-col p-3 bg-[#112749] overflow-hidden"
+          class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden"
         >
           <div
             class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
@@ -1006,7 +1018,7 @@
         </div>
         <!-- new box -->
         <div
-          class="acheivementSmallBox w-[500px] h-[415px] center flex-col p-3 bg-[#112749] overflow-hidden"
+          class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden"
         >
           <div
             class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
@@ -1023,7 +1035,7 @@
         </div>
         <!-- new box -->
         <div
-          class="acheivementSmallBox w-[500px] h-[415px] center flex-col p-3 bg-[#112749] overflow-hidden"
+          class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden"
         >
           <div
             class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
@@ -1040,7 +1052,7 @@
         </div>
         <!-- new box -->
         <div
-          class="acheivementSmallBox w-[500px] h-[415px] center flex-col p-3 bg-[#112749] overflow-hidden shadow-xl"
+          class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden"
         >
           <div
             class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
@@ -1059,13 +1071,15 @@
     </div>
     <!-- Section 6: Contact -->
     <div
-      class="section h-screen w-screen flex justify-center items-center bg-gradient-to-r from-[#284065] to-[#213555] text-white flex-col md:flex-row"
+      class="section h-fit w-screen flex justify-center items-center bg-gradient-to-r from-[#284065] to-[#213555] text-white flex-col md:flex-row"
     >
       <!-- left side part -->
-      <div class="w-1/2 h-full center flex-col p-12">
+      <div class="w-full h-1/2 md:w-1/2 md:h-full center flex-col p-6 md:p-12">
         <div class="w-full h-fit flex gap-2">
           <div class="w-1/2">
-            <div class="my-1 poppins-light">Your name</div>
+            <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
+              Your name
+            </div>
             <div>
               <input
                 type="text"
@@ -1075,7 +1089,9 @@
             </div>
           </div>
           <div class="w-1/2">
-            <div class="my-1 poppins-light">Your email address</div>
+            <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
+              Your email address
+            </div>
             <div>
               <input
                 type="text"
@@ -1086,7 +1102,9 @@
           </div>
         </div>
         <div class="w-full h-fit">
-          <div class="my-1 poppins-light">Subject</div>
+          <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
+            Subject
+          </div>
           <div>
             <input
               type="text"
@@ -1096,7 +1114,9 @@
           </div>
         </div>
         <div class="w-full h-fit">
-          <div class="my-1 poppins-light">Message</div>
+          <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
+            Message
+          </div>
           <div>
             <textarea
               type="text"
@@ -1116,7 +1136,9 @@
         </div>
       </div>
       <!-- right side part -->
-      <div class="w-1/2 h-full flex flex-col justify-center gap-5 pr-[60px]">
+      <div
+        class="w-full h-1/2 md:w-1/2 md:h-full flex flex-col justify-center items-center gap-5 p-6 md:pr-[60px]"
+      >
         <div class="h-fit w-full poppins-regular text-xl">
           <span>-</span>Contact With Me
         </div>
@@ -1129,15 +1151,21 @@
           and technology, I’d love to connect. Let’s turn ideas into reality and
           build something amazing together!
         </div>
-        <div class="h-9 w-full poppins-regular text-xl flex items-center">
+        <div
+          class="h-9 w-full poppins-regular text-md md:text-xl flex items-center"
+        >
           <img class="h-9 w-9 mr-4" src="images/contact.png" alt="" />
           +642562
         </div>
-        <div class="h-9 w-full poppins-regular text-xl flex items-center">
+        <div
+          class="h-9 w-full poppins-regular text-md md:text-xl flex items-center"
+        >
           <img class="h-9 w-9 mr-4" src="images/contact.png" alt="" />
           ahshanulhaqucgub@gmail.com
         </div>
-        <div class="h-9 w-full poppins-regular text-xl flex items-center">
+        <div
+          class="h-9 w-full poppins-regular text-md md:text-xl flex items-center"
+        >
           <img class="h-9 w-9 mr-4" src="images/contact.png" alt="" />
           213002122@student.green.edu.bd
         </div>
