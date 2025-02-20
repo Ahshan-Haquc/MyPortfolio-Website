@@ -15,10 +15,10 @@ function toggleMenu() {
     if (menu.classList.contains("left-[-400px]")) {
       menu.classList.remove("left-[-400px]");
       menu.classList.add("left-0");
-      menuIcon.classList.add("rotate-180");
+      menuIcon.classList.add("rotate-90");
     } else {
       menu.classList.remove("left-0");
       menu.classList.add("left-[-400px]");
-      menuIcon.classList.remove("rotate-180");
+      menuIcon.classList.remove("rotate-90");
     }
   }
