@@ -22,3 +22,19 @@ function toggleMenu() {
       menuIcon.classList.remove("rotate-90");
     }
   }
+
+
+
+  // this is for highlighting navBar that user currently at which page 
+  document.addEventListener("DOMContentLoaded",function (){
+    const home = document.querySelector("index.html");
+    
+      // Get the current page filename
+  const currentPage = window.location.pathname.split("/").pop();
+  console.log(currentPage);
+
+    if(currentPage === "index.html"){
+      console.log("here working");
+      home.classList.add("text-blue-500", "font-bold");
+    }
+  })
