@@ -27,14 +27,32 @@ function toggleMenu() {
 
   // this is for highlighting navBar that user currently at which page 
   document.addEventListener("DOMContentLoaded",function (){
-    const home = document.querySelector("index.html");
+    const home = document.querySelector(".index");
+    const About = document.querySelector(".About");
+    const Career = document.querySelector(".Career");
+    const Projects = document.querySelector(".Projects");
+    const Skills = document.querySelector(".Skills");
+    const Acheivements = document.querySelector(".Acheivements");
     
-      // Get the current page filename
-  const currentPage = window.location.pathname.split("/").pop();
-  console.log(currentPage);
+    // Get the current page filename
+    const currentPage = window.location.pathname.split("/").pop();
 
     if(currentPage === "index.html"){
-      console.log("here working");
-      home.classList.add("text-blue-500", "font-bold");
+      home.classList.add("linkHover");
+    }
+    else if(currentPage === "about.html"){
+      About.classList.add("linkHover");
+    }
+    else if(currentPage === "career.html"){
+      Career.classList.add("linkHover");
+    }
+    else if(currentPage === "projects.html"){
+      Projects.classList.add("linkHover");
+    }
+    else if(currentPage === "skills.html"){
+      Skills.classList.add("linkHover");
+    }
+    else if(currentPage === "acheivement.html"){
+      Acheivements.classList.add("linkHover");
     }
   })

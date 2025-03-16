@@ -19,6 +19,8 @@
 .linkHover {
   position: relative;
   transition: all 0.3s ease-out;
+  color: #f5efe7;
+  cursor: pointer;
 }
 
 .linkHover::after {
@@ -26,20 +28,21 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 0; /* Start with no width */
+  width: 100%; /* Start with no width */
   height: 2px; /* The desired border height */
   background-color: #f5efe7; /* Border color */
   transition: width 0.3s ease-out; /* Smooth transition for width */
 }
 
-.linkHover:hover {
+/* .linkHover:hover {
   cursor: pointer;
   color: #f5efe7;
 }
 
 .linkHover:hover::after {
-  width: 100%; /* Expands the border to full width on hover */
-}
+  width: 100%; /* Expands the border to full width on hover 
+} 
+*/
 
 /* ------------------- */
 /* common styles  */
