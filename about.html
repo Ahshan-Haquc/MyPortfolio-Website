@@ -149,7 +149,7 @@
       </div>
     </div>
     <!-- ----------------end--------- -->
-    <!-- Section -->
+    <!--About Section -->
     <div
       class="section min-h-screen max-h-fit w-screen pt-[80px] md:pt[5vh] flex flex-col md:flex-row bg-gradient-to-r from-[#284065] to-[#213555] text-white"
     >
@@ -204,19 +204,46 @@
         <div class="h-fit w-full mt-5 md:mt-[5.5rem] flex gap-2">
           <div
             class="buttons w-[150px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
+            onclick="showAboutPagePopup('My Journey')"
           >
             My Journey
           </div>
           <div
             class="buttons w-[150px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
+            onclick="showAboutPagePopup('My Interests')"
           >
             My Interests
           </div>
           <div
             class="buttons w-[200px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
+            onclick="showAboutPagePopup('Why contact me')"
           >
             Why contact me ?
           </div>
+        </div>
+      </div>
+    </div>
+    <!-- this div for showing popup while clicking about page buttons -->
+    <div
+      class="fixed top-0 left-0 h-screen w-screen center bg-[#00000071] z-10 hidden"
+      id="aboutPagePopupBox"
+    >
+      <div
+        id="insideTextDiv"
+        class="relative h-[400px] w-[700px] p-5 rounded-xl bg-yellow-500 border border-green-500 text-white shadow-lg opacity-0 scale-75 pointer-events-none transition duration-200 ease-out"
+      >
+        <div
+          class="absolute top-1 right-1 h-12 w-12 p-2 rounded-full center duration-300 hover:bg-white hover:text-red-500 cursor-pointer"
+          id="aboutPopupHide"
+          onclick="hideAboutPagePopup()"
+        >
+          <i class="fa-solid fa-xmark fa-xl hover:scale-115"></i>
+        </div>
+        <div
+          class="pt-10 h-full poppins-thin text-lg text-black text-center center"
+          id="aboutPopupText"
+        >
+          <!-- Text will appear here dynamically -->
         </div>
       </div>
     </div>

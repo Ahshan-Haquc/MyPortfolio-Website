@@ -240,6 +240,18 @@
   border-bottom: 1px solid #fb7500;
   border-radius: 30px;
 }
+/* ------------about------------ */
+/* Add this in <style> or your CSS file if needed */
+.show-popup {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  pointer-events: auto !important;
+}
+.hide-popup {
+  opacity: 0 !important;
+  transform: scale(0.95) !important;
+  pointer-events: none !important;
+}
 
 /* -----------projects---------- */
 .projectSmallBox {

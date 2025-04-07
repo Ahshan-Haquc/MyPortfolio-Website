@@ -56,3 +56,72 @@ function toggleMenu() {
       Acheivements.classList.add("linkHover");
     }
   })
+
+
+  // this is for showing popup of about page buttons
+  function showAboutPagePopup(btnName) {
+    const popup = document.getElementById("aboutPagePopupBox");
+    const textDiv = document.getElementById("insideTextDiv");
+    const textBox = document.getElementById("aboutPopupText");
+  
+    // Set the content first
+    if (btnName === "My Journey") {
+      textBox.innerText =
+        "My journey is a testament to constant growth. From mastering basic HTML to building full-stack applications, I’ve embraced every challenge as an opportunity to evolve. I believe great design begins with empathy, and every project I create reflects that.";
+    } else if (btnName === "My Interests") {
+      textBox.innerText =
+        "I’m deeply passionate about turning ideas into reality through code. Whether it's crafting interactive UIs, exploring AI, or optimizing performance, I love pushing boundaries and learning new things. Innovation and impact drive me.";
+    } else if (btnName === "Why contact me") {
+      textBox.innerText =
+        "If you're looking for someone who blends creativity with technical expertise and truly cares about delivering meaningful solutions—let’s talk. I'm ready to collaborate, innovate, and contribute to something great.";
+    }
+  
+    // Show popup container first
+    popup.classList.remove("hidden");
+  
+    // Trigger transition after slight delay to ensure visibility
+    setTimeout(() => {
+      textDiv.classList.remove("opacity-0", "scale-95", "pointer-events-none");
+      textDiv.classList.add("opacity-100", "scale-100");
+    }, 20); // short delay to allow DOM to render
+  }
+  
+  function hideAboutPagePopup() {
+    const popup = document.getElementById("aboutPagePopupBox");
+    const textDiv = document.getElementById("insideTextDiv");
+    const textBox = document.getElementById("aboutPopupText");
+  
+    // Animate out
+    textDiv.classList.remove("opacity-100", "scale-100");
+    textDiv.classList.add("opacity-0", "scale-75", "pointer-events-none");
+  
+    // After animation, hide popup and clear text
+    setTimeout(() => {
+      popup.classList.add("hidden");
+      textBox.innerText = "";
+    }, 50); // match transition duration
+  }
+  
+
+  // this is for contact page 
+  // for sending email 
+  function sendMail() {
+    const name = document.getElementById("contactName").value.trim();
+    const email = document.getElementById("contactEmail").value.trim();
+    const subject = document.getElementById("contactSubject").value.trim();
+    const message = document.getElementById("contactMessage").value.trim();
+
+    if (!name || !email || !subject || !message) {
+      alert("Please fill out all fields!");
+      return;
+    }
+
+    const mailTo = "ahshanulhaqucgub@gmail.com"; // <- Change if needed
+    const fullSubject = encodeURIComponent(subject);
+    const fullBody = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\n${message}`
+    );
+
+    window.location.href = `mailto:${mailTo}?subject=${fullSubject}&body=${fullBody}`;
+  }
+

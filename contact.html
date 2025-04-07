@@ -149,74 +149,75 @@
       </div>
     </div>
     <!-- ----------------end--------- -->
-    <!-- Section -->
-
+    <!--Contact Section -->
+    <!-- Section 6: Contact -->
+    <!-- <div
+    class="section h-fit w-screen pt-[80px] md:pt-[10vh] flex justify-center items-center bg-gradient-to-r from-[#284065] to-[#213555] text-white flex-col md:flex-row"
+  > -->
     <div
       class="section h-fit w-screen pt-[80px] md:pt-[10vh] flex justify-center items-center bg-gradient-to-r from-[#284065] to-[#213555] text-white flex-col md:flex-row"
     >
       <!-- left side part -->
-      <div class="w-full h-1/2 md:w-1/2 md:h-full center flex-col p-6 md:p-12">
+      <!-- Contact Form -->
+      <form
+        id="contactForm"
+        class="w-full h-1/2 md:w-1/2 md:h-full center flex-col p-6 md:p-12"
+        onsubmit="sendEmail(event)"
+      >
         <div class="w-full h-fit flex gap-2">
           <div class="w-1/2">
             <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
               Your name
             </div>
-            <div>
-              <input
-                type="text"
-                name="name"
-                class="w-full h-10 border rounded-lg bg-none p-2 text-black"
-              />
-            </div>
+            <input
+              type="text"
+              id="userName"
+              class="w-full h-10 border rounded-lg bg-none p-2 text-black"
+            />
           </div>
           <div class="w-1/2">
             <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
               Your email address
             </div>
-            <div>
-              <input
-                type="text"
-                name="name"
-                class="w-full h-10 border rounded-lg bg-none p-2 text-black"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="w-full h-fit">
-          <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
-            Subject
-          </div>
-          <div>
             <input
-              type="text"
-              name="name"
+              type="email"
+              id="userEmail"
               class="w-full h-10 border rounded-lg bg-none p-2 text-black"
             />
           </div>
         </div>
+
+        <div class="w-full h-fit">
+          <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
+            Subject
+          </div>
+          <input
+            type="text"
+            id="subject"
+            class="w-full h-10 border rounded-lg bg-none p-2 text-black"
+          />
+        </div>
+
         <div class="w-full h-fit">
           <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
             Message
           </div>
-          <div>
-            <textarea
-              type="text"
-              name="name"
-              class="w-full h-[150px] border rounded-lg bg-none p-2 text-black"
-            ></textarea>
-          </div>
+          <textarea
+            id="message"
+            class="w-full h-[150px] border rounded-lg bg-none p-2 text-black"
+          ></textarea>
         </div>
+
         <div class="w-full h-fit">
-          <div>
-            <input
-              type="submit"
-              name="name"
-              class="w-1/4 h-[40px] my-4 rounded-lg bg-[#EDFF00] hover:bg-white text-black poppins-regular text-md"
-            />
-          </div>
+          <input
+            type="submit"
+            value="Send"
+            class="w-1/4 h-[40px] my-4 rounded-lg bg-[#EDFF00] hover:bg-white text-black poppins-regular text-md cursor-pointer"
+          />
         </div>
-      </div>
-      <!-- right side part -->
+      </form>
+
+      <!-- right side part remains unchanged -->
       <div
         class="w-full h-1/2 md:w-1/2 md:h-full flex flex-col justify-center items-center gap-5 p-6 md:pr-[60px]"
       >
@@ -252,7 +253,51 @@
         </div>
       </div>
     </div>
+
     <script src="script.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/sdk/3.2/email.min.js"
+    ></script>
+    <script>
+      (function () {
+        emailjs.init("-FrRWpdOLQUbeS97K"); //  Replace with your actual Public Key
+      })();
+
+      function sendEmail(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("userName").value;
+        const email = document.getElementById("userEmail").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        if (!name || !email || !subject || !message) {
+          alert("Please fill in all fields.");
+          return;
+        }
+
+        const params = {
+          name: name, // Matches {{name}}
+          email: email, // Matches {{email}}
+          title: subject, // Matches {{title}}
+          message: message, // Matches {{message}}
+          time: new Date().toLocaleString(), // Optional: for {{time}}
+        };
+
+        emailjs.send("service_sdng3qe", "template_j3of4h8", params).then(
+          function (res) {
+            alert("Email sent successfully!");
+            document.getElementById("contactForm").reset();
+          },
+          function (err) {
+            console.error("Email sending failed:", err);
+            alert("Something went wrong. Please try again.");
+          }
+        );
+      }
+    </script>
   </body>
   <footer class="bg-gray-900 text-white py-6">
     <div
