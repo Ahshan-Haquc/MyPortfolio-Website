@@ -151,7 +151,7 @@
     <!-- ----------------end--------- -->
     <!-- Section 1: home page  -->
     <div
-      class="section min-h-fit md:min-h-[100vh] md:max-h-fit w-[100vw] flex flex-col bg-gradient-to-r from-[#284065] to-[#213555] pb-8 md:pb-0 md:pt-[5vh]"
+      class="section min-h-fit md:min-h-[100vh] md:max-h-fit w-[100vw] hidden md:flex flex-col bg-gradient-to-r from-[#284065] to-[#213555] pb-8 md:pb-0 md:pt-[5vh]"
     >
       <div class="md:h-screen h-fit w-screen center">
         <div
@@ -309,7 +309,7 @@
 
     <!-- Section 2: About -->
     <div
-      class="section min-h-screen max-h-fit w-screen md:pt[5vh] flex flex-col md:flex-row bg-gradient-to-r from-[#284065] to-[#213555] text-white"
+      class="section min-h-screen max-h-fit w-screen pt-[10vh] md:pt[5vh] flex flex-col md:flex-row bg-gradient-to-r from-[#284065] to-[#213555] text-white"
     >
       <!-- left side part -->
       <div class="w-full h-1/2 md:w-1/2 md:h-full center">
@@ -377,6 +377,56 @@
             onclick="showAboutPagePopup('Why contact me')"
           >
             Why contact me ?
+          </div>
+        </div>
+        <div class="h-fit w-full mt-1 md:hidden">
+          <!-- Follow icons -->
+          <div class="h-fit w-full pt-1">
+            <div class="poppins-thin text-white">Follow me on :</div>
+            <div class="mt-2 w-full h-11 flex gap-2 md:gap-4 items-center">
+              <div class="animateImage">
+                <img
+                  class="h-9 w-9 rounded-full hoverScale"
+                  src="Social Medio Picture/facebook.png"
+                  alt=""
+                />
+              </div>
+              <div class="animateImage">
+                <img
+                  class="h-9 w-9 rounded-full hoverScale"
+                  src="Social Medio Picture/instagram.png"
+                  alt=""
+                />
+              </div>
+              <div class="animateImage">
+                <img
+                  class="h-9 w-9 rounded-full hoverScale"
+                  src="Social Medio Picture/facebook.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="h-9 w-9 bg-white overflow-hidden rounded-full animateImage"
+                onclick="window.open('https://github.com/Ahshan-Haquc', '_blank')"
+              >
+                <img
+                  class="h-9 w-9 rounded-full hoverScale"
+                  src="Social Medio Picture/github.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="animateImage"
+                onclick="window.open('https://www.linkedin.com/in/ahshanul-haquc-82382a337/', '_blank')"
+              >
+                <img
+                  class="h-9 w-9 rounded-full hoverScale"
+                  src="Social Medio Picture/linkedin.png"
+                  alt=""
+                />
+              </div>
+              <div class="buttons hoverScale">Download CV</div>
+            </div>
           </div>
         </div>
       </div>
