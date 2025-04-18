@@ -200,56 +200,80 @@
                 modern technologies like JavaScript, Node.js, and MongoDB.
               </div>
             </div>
-            <!-- Follow icons -->
-            <div class="h-1/5 w-full pl-3 pt-1 md:pl-10 md:pt-6">
-              <div class="poppins-thin text-white">Follow me on :</div>
-              <div class="mt-2 w-full h-11 flex gap-2 md:gap-4 items-center">
-                <div class="animateImage">
-                  <img
-                    class="h-9 w-9 rounded-full hoverScale"
-                    src="Social Medio Picture/facebook.png"
-                    alt=""
-                  />
-                </div>
-                <div class="animateImage">
-                  <img
-                    class="h-9 w-9 rounded-full hoverScale"
-                    src="Social Medio Picture/instagram.png"
-                    alt=""
-                  />
-                </div>
-                <div class="animateImage">
-                  <img
-                    class="h-9 w-9 rounded-full hoverScale"
-                    src="Social Medio Picture/facebook.png"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="h-9 w-9 bg-white overflow-hidden rounded-full animateImage"
-                  onclick="window.open('https://github.com/Ahshan-Haquc', '_blank')"
-                >
-                  <img
-                    class="h-9 w-9 rounded-full hoverScale"
-                    src="Social Medio Picture/github.png"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="animateImage"
-                  onclick="window.open('https://www.linkedin.com/in/ahshanul-haquc-82382a337/', '_blank')"
-                >
-                  <img
-                    class="h-9 w-9 rounded-full hoverScale"
-                    src="Social Medio Picture/linkedin.png"
-                    alt=""
-                  />
-                </div>
-                <div
+            <!-- Connect icons -->
+            <div class="h-1/5 w-full flex pl-3 pt-1 md:pl-10 md:pt-6">
+              <!-- follow icons  -->
+              <div class="">
+                <div class="poppins-thin text-white">Follow me on :</div>
+                <div class="mt-2 w-full h-11 flex gap-2 md:gap-4 items-center">
+                  <div class="animateImage">
+                    <img
+                      class="h-9 w-9 rounded-full hoverScale"
+                      src="Social Medio Picture/facebook.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="animateImage">
+                    <img
+                      class="h-9 w-9 rounded-full hoverScale"
+                      src="Social Medio Picture/instagram.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="h-9 w-9 bg-white overflow-hidden rounded-full animateImage"
+                    onclick="window.open('https://github.com/Ahshan-Haquc', '_blank')"
+                  >
+                    <img
+                      class="h-9 w-9 rounded-full hoverScale"
+                      src="Social Medio Picture/github.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="animateImage"
+                    onclick="window.open('https://www.linkedin.com/in/ahshanul-haquc-82382a337/', '_blank')"
+                  >
+                    <img
+                      class="h-9 w-9 rounded-full hoverScale"
+                      src="Social Medio Picture/linkedin.png"
+                      alt=""
+                    />
+                  </div>
+                  <!-- <div
                   class="buttons hoverScale"
                   style="background-color: #00a300; color: white"
                 >
+                  <a href="My_Resumme.pdf" download>Download Resume</a>
+                </div> -->
+                  <!-- <div
+                  class="buttons hoverScale"
+                  style="background-color: #00a300; color: white"
+                  onclick="previewAndDownloadPDF()"
+                >
                   Download CV
+                </div> -->
+                </div>
+              </div>
+              <!-- Download icons -->
+              <div class="ml-14">
+                <div class="poppins-thin text-white">Download :</div>
+                <div class="mt-2 w-full h-11 flex gap-2 md:gap-2 items-center">
+                  <a href="My_Resumme.pdf" download
+                    ><div
+                      class="buttons hoverScale poppins-thin"
+                      style="background-color: #00a300; color: white"
+                    >
+                      <i class="fa-solid fa-download mr-2"></i>Resume
+                    </div></a
+                  >
+                  <div
+                    class="buttons hoverScale poppins-thin"
+                    style="background-color: #00a300; color: white"
+                    onclick="previewAndDownloadPDF()"
+                  >
+                    <i class="fa-solid fa-download mr-2"></i>CV
+                  </div>
                 </div>
               </div>
             </div>
@@ -379,6 +403,7 @@
             Why contact me ?
           </div>
         </div>
+        <!-- this will be show in Phone screen  -->
         <div class="h-fit w-full mt-1 md:hidden">
           <!-- Follow icons -->
           <div class="h-fit w-full pt-1">
@@ -425,7 +450,9 @@
                   alt=""
                 />
               </div>
-              <div class="buttons hoverScale">Download CV</div>
+              <div class="buttons hoverScale text-sm">
+                <a href="My_CV.pdf" download>Download CV</a>
+              </div>
             </div>
           </div>
         </div>

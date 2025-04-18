@@ -65,6 +65,8 @@
 
 .buttons {
   height: 44px;
+  min-width: 80px;
+  max-width: fit-content;
   padding: 0px 20px;
   background-color: #f5efe7;
   color: black;

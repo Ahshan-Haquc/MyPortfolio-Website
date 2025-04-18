@@ -101,6 +101,20 @@ function toggleMenu() {
       textBox.innerText = "";
     }, 50); // match transition duration
   }
+
+  // download the CV when clicked on the button
+  function previewAndDownloadPDF() {
+    // Trigger download
+    const a = document.createElement('a');
+    a.href = 'My_CV.pdf';
+    a.download = 'My_CV.pdf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+    // Open preview
+    window.open('My_CV.pdf', '_blank');
+  }
   
 
   // this is for contact page 
