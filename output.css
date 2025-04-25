@@ -785,6 +785,10 @@ video {
   margin-left: 0.25rem;
 }
 
+.ml-14 {
+  margin-left: 3.5rem;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -803,6 +807,10 @@ video {
 
 .mr-\[6px\] {
   margin-right: 6px;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-2 {
@@ -829,8 +837,8 @@ video {
   margin-top: 80px;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .flex {
@@ -956,6 +964,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[600px\] {
+  height: 600px;
 }
 
 .max-h-fit {
@@ -1338,6 +1350,16 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
 }
 
+.bg-green-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity, 1));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1364,6 +1386,11 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-2 {
@@ -1436,16 +1463,12 @@ video {
   padding-top: 1.5rem;
 }
 
-.pt-\[80px\] {
-  padding-top: 80px;
-}
-
-.pt-\[5vh\] {
-  padding-top: 5vh;
-}
-
 .pt-\[10vh\] {
   padding-top: 10vh;
+}
+
+.pt-\[80px\] {
+  padding-top: 80px;
 }
 
 .text-center {
@@ -1674,6 +1697,9 @@ video {
 
 .buttons {
   height: 44px;
+  min-width: 80px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   padding: 0px 20px;
   background-color: #f5efe7;
   color: black;
@@ -2211,6 +2237,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
   }
 
   .md\:gap-3 {

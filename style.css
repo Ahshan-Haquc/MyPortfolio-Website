@@ -242,6 +242,58 @@
   border-bottom: 1px solid #fb7500;
   border-radius: 30px;
 }
+
+.testBox {
+  position: absolute; /* Change from absolute */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #112749;
+  box-shadow: 0px 10px 23px #56ffff36;
+  overflow: hidden;
+  animation: moveLeft 10s linear infinite;
+  animation-play-state: running;
+  z-index: 1; /* Default layer */
+}
+
+.testBox.paused {
+  z-index: 10; /* Bring paused one above others */
+}
+
+@keyframes moveLeft {
+  0% {
+    right: -400px; /* Fully outside screen */
+    transform: translateY(-50%) scale(0.5);
+  }
+  50% {
+    right: 50%; /* Center */
+    transform: translate(50%, -50%) scale(1); /* align center */
+  }
+  100% {
+    right: 100%;
+    transform: translateY(-50%) scale(0.5);
+  }
+}
+
+.testBox:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.testBox:nth-of-type(2) {
+  animation-delay: 2s;
+}
+.testBox:nth-of-type(3) {
+  animation-delay: 4s;
+}
+.testBox:nth-of-type(4) {
+  animation-delay: 6s;
+}
+.testBox:nth-of-type(5) {
+  animation-delay: 8s;
+}
+
 /* ------------about------------ */
 /* Add this in <style> or your CSS file if needed */
 .show-popup {

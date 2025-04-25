@@ -139,3 +139,52 @@ function toggleMenu() {
     window.location.href = `mailto:${mailTo}?subject=${fullSubject}&body=${fullBody}`;
   }
 
+
+  // this is for animating boxes in Acheivements page  
+
+      const boxes = document.querySelectorAll(".testBox");
+      let isPaused = false;
+      let lastTriggeredBox = null;
+
+      function checkBoxPosition() {
+        const screenCenter = window.innerWidth / 2;
+
+        if (isPaused) {
+          requestAnimationFrame(checkBoxPosition);
+          return;
+        }
+
+        boxes.forEach((box) => {
+          const rect = box.getBoundingClientRect();
+          const boxCenter = rect.left + rect.width / 2;
+          const isAtCenter = Math.abs(boxCenter - screenCenter) < 10;
+
+          if (isAtCenter && lastTriggeredBox !== box) {
+            isPaused = true;
+            lastTriggeredBox = box;
+
+            box.classList.add("paused");
+
+            boxes.forEach((b) => {
+              b.style.animationPlayState = "paused";
+            });
+
+            setTimeout(() => {
+              boxes.forEach((b) => {
+                b.style.animationPlayState = "running";
+              });
+              box.classList.remove("paused");
+              isPaused = false;
+            }, 1000);
+          }
+
+          if (!isAtCenter && lastTriggeredBox === box) {
+            lastTriggeredBox = null;
+          }
+        });
+
+        requestAnimationFrame(checkBoxPosition);
+      }
+
+      requestAnimationFrame(checkBoxPosition);
+
