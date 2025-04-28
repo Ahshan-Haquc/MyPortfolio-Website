@@ -117,28 +117,6 @@ function toggleMenu() {
   }
   
 
-  // this is for contact page 
-  // for sending email 
-  function sendMail() {
-    const name = document.getElementById("contactName").value.trim();
-    const email = document.getElementById("contactEmail").value.trim();
-    const subject = document.getElementById("contactSubject").value.trim();
-    const message = document.getElementById("contactMessage").value.trim();
-
-    if (!name || !email || !subject || !message) {
-      alert("Please fill out all fields!");
-      return;
-    }
-
-    const mailTo = "ahshanulhaqucgub@gmail.com"; // <- Change if needed
-    const fullSubject = encodeURIComponent(subject);
-    const fullBody = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\n${message}`
-    );
-
-    window.location.href = `mailto:${mailTo}?subject=${fullSubject}&body=${fullBody}`;
-  }
-
 
   // this is for animating boxes in Acheivements page  
 

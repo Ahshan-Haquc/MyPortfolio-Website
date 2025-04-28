@@ -187,7 +187,7 @@
                   </div>
                 </div>
                 <div
-                  class="w-full h-[50px] mb-1 md:mb-5 poppins-extrabold text-md md:text-3xl text-[#F5EFE7]"
+                  class="w-full h-[50px] mb-1 md:mb-5 poppins-extrabold text-md md:text-[28px] text-[#F5EFE7]"
                 >
                   Passionate Full-Stack Web Developer |<br />Turning Ideas into
                   Interactive Experiences
@@ -328,7 +328,7 @@
         <div class="h-fit w-full poppins-regular text-sm md:text-xl">
           <span>-</span>About me
         </div>
-        <div class="h-fit w-full text-xl md:text-5xl">
+        <div class="h-fit w-full text-xl md:text-4xl">
           <span class="poppins-bold">Who is</span>&nbsp;<span
             class="poppins-regular text-[#EDFF00]"
             >Ahshanul Haquc ?</span
@@ -1216,10 +1216,9 @@
     </div>
     <!-- Section 6: Contact -->
     <div
-      class="section h-fit w-screen flex justify-center items-center bg-gradient-to-r from-[#284065] to-[#213555] text-white flex-col md:flex-row"
+      class="section h-fit w-screen pt-[80px] md:pt-[10vh] flex justify-center items-center bg-gradient-to-r from-[#284065] to-[#213555] text-white flex-col md:flex-row"
     >
       <!-- left side part -->
-
       <div
         class="w-full h-1/2 md:w-1/2 md:h-full flex flex-col justify-center items-center gap-5 p-6 md:pr-[60px]"
       >
@@ -1254,72 +1253,144 @@
           213002122@student.green.edu.bd
         </div>
       </div>
-      <!-- right side part remains unchanged -->
-      <div class="w-full h-1/2 md:w-1/2 md:h-full center flex-col p-6 md:p-12">
+      <!-- left side part -->
+      <!-- Contact Form -->
+      <form
+        id="contactForm"
+        class="w-full h-1/2 md:w-1/2 md:h-full center flex-col p-6 md:p-12"
+        onsubmit="sendEmail(event)"
+      >
         <div class="w-full h-fit flex gap-2">
           <div class="w-1/2">
             <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
               Your name
             </div>
-            <div>
-              <input
-                type="text"
-                id="contactName"
-                class="w-full h-10 border rounded-lg bg-none p-2 text-black"
-              />
-            </div>
+            <input
+              type="text"
+              id="userName"
+              class="w-full h-10 border rounded-lg bg-none p-2 text-black"
+            />
           </div>
           <div class="w-1/2">
             <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
               Your email address
             </div>
-            <div>
-              <input
-                type="email"
-                id="contactEmail"
-                class="w-full h-10 border rounded-lg bg-none p-2 text-black"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="w-full h-fit">
-          <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
-            Subject
-          </div>
-          <div>
             <input
-              type="text"
-              id="contactSubject"
+              type="email"
+              id="userEmail"
               class="w-full h-10 border rounded-lg bg-none p-2 text-black"
             />
           </div>
         </div>
+
+        <div class="w-full h-fit">
+          <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
+            Subject
+          </div>
+          <input
+            type="text"
+            id="subject"
+            class="w-full h-10 border rounded-lg bg-none p-2 text-black"
+          />
+        </div>
+
         <div class="w-full h-fit">
           <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
             Message
           </div>
-          <div>
-            <textarea
-              id="contactMessage"
-              class="w-full h-[150px] border rounded-lg bg-none p-2 text-black"
-            ></textarea>
-          </div>
+          <textarea
+            id="message"
+            class="w-full h-[150px] border rounded-lg bg-none p-2 text-black"
+          ></textarea>
         </div>
+
         <div class="w-full h-fit">
-          <div>
-            <button
-              onclick="sendMail()"
-              class="w-1/4 h-[40px] my-4 rounded-lg duration-300 bg-[#EDFF00] hover:bg-[#00a300] hover:text-white text-black poppins-regular text-md"
-            >
-              Send
-            </button>
-          </div>
+          <input
+            type="submit"
+            value="Send"
+            class="w-1/4 h-[40px] my-4 rounded-lg duration-300 bg-[#EDFF00] hover:bg-[#d3df2b] text-black poppins-regular text-md cursor-pointer"
+          />
         </div>
-      </div>
+      </form>
+    </div>
+
+    <!-- this is for showing spin and succesfull popup while email sending  -->
+    <!-- Loading Spinner -->
+    <div
+      id="loadingSpinner"
+      class="fixed top-0 left-0 w-full h-full bg-[#00000090] flex justify-center items-center hidden z-50"
+    >
+      <div
+        class="h-16 w-16 border-4 border-white border-t-transparent rounded-full animate-spin"
+      ></div>
+    </div>
+
+    <!-- Success Popup -->
+    <div
+      id="successPopup"
+      class="fixed top-5 right-[48%] bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg hidden z-50"
+    >
+      Email sent successfully! ✅
     </div>
 
     <!-- js file  -->
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+      (function () {
+        emailjs.init("-FrRWpdOLQUbeS97K"); // your public key
+      })();
+
+      function sendEmail(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("userName").value;
+        const email = document.getElementById("userEmail").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        if (!name || !email || !subject || !message) {
+          alert("Please fill in all fields!");
+          return;
+        }
+
+        const params = {
+          name: name,
+          email: email,
+          title: subject,
+          message: message,
+          time: new Date().toLocaleString(),
+        };
+
+        // Show loading spinner
+        document.getElementById("loadingSpinner").classList.remove("hidden");
+
+        emailjs.send("service_sdng3qe", "template_j3of4h8", params).then(
+          function (res) {
+            // Hide spinner
+            document.getElementById("loadingSpinner").classList.add("hidden");
+
+            // Show success popup
+            const popup = document.getElementById("successPopup");
+            popup.classList.remove("hidden");
+
+            // Auto-hide popup after 3 seconds
+            setTimeout(() => {
+              popup.classList.add("hidden");
+            }, 3000);
+
+            // Reset form
+            document.getElementById("contactForm").reset();
+          },
+          function (err) {
+            document.getElementById("loadingSpinner").classList.add("hidden");
+            console.error("Error sending email:", err);
+            alert("Something went wrong. Please try again later.");
+          }
+        );
+      }
+    </script>
   </body>
   <footer class="bg-gray-900 text-white py-6">
     <div
@@ -1335,13 +1406,13 @@
       <div class="center flex-col mt-4 md:mt-0 text-[11px] md:text-[15px]">
         <div class="text-gray-500">Quick access</div>
         <div class="center gap-3 md:gap-5 mt-2 md:mt-0">
-          <a href="#" class="hover:text-blue-400">Home</a>
-          <a href="#about" class="hover:text-blue-400">About</a>
-          <a href="#skills" class="hover:text-blue-400">Career</a>
-          <a href="#projects" class="hover:text-blue-400">Projects</a>
-          <a href="#projects" class="hover:text-blue-400">Skills</a>
-          <a href="#projects" class="hover:text-blue-400">Acheivement</a>
-          <a href="#contact" class="hover:text-blue-400">Contact</a>
+          <a href="index.html" class="hover:text-blue-400">Home</a>
+          <a href="about.html" class="hover:text-blue-400">About</a>
+          <a href="career.html" class="hover:text-blue-400">Career</a>
+          <a href="projects.html" class="hover:text-blue-400">Projects</a>
+          <a href="skills.html" class="hover:text-blue-400">Skills</a>
+          <a href="acheivement.html" class="hover:text-blue-400">Acheivement</a>
+          <a href="contact.html" class="hover:text-blue-400">Contact</a>
         </div>
       </div>
 
