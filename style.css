@@ -106,13 +106,13 @@
 /* Wave-like color animation */
 @keyframes waveColor {
   0% {
-    background-color: rgb(251, 255, 0);
+    background-color: #1b3a68;
   }
   50% {
-    background-color: #ff0000; /* Bright green */
+    background-color: #0c3e88; /* Bright green */
   }
   100% {
-    background-color: #ffd3d3;
+    background-color: #1d60c6;
   }
 }
 
