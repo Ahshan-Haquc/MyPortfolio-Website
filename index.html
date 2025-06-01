@@ -18,6 +18,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <!-- Scroll Animation Css  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- this is for google analysis  -->
     <!-- Google tag (gtag.js) -->
     <script
@@ -333,12 +336,13 @@
       class="section min-h-screen max-h-fit w-screen pt-[10vh] md:pt[5vh] flex flex-col md:flex-row bg-gradient-to-r from-[#284065] to-[#213555] text-white"
     >
       <!-- left side part -->
-      <div class="w-full h-1/2 md:w-1/2 md:h-full center">
+      <div class="w-full h-1/2 md:w-1/2 md:h-full center" data-aos="zoom-in">
         <img class="h-[300px] md:h-[500px]" src="aboutPagePic.png" alt="" />
       </div>
       <!-- right side part -->
       <div
         class="w-full h-1/2 p-3 md:w-1/2 md:h-full flex flex-col justify-center items-center gap-1 md:gap-5 md:pr-[60px]"
+        data-aos="zoom-in"
       >
         <div class="h-fit w-full poppins-regular text-sm md:text-xl">
           <span>-</span>About me
@@ -490,12 +494,13 @@
         <div>My <span class="text-[#EDFF00]">Academic</span> &</div>
         <div><span class="text-[#EDFF00]">Profesional</span> Journey</div>
       </div>
-      <!-- education div  -->
       <div
         class="w-full h-4/6 px-3 md:px-0 flex flex-col md:flex-row justify-center items-start gap-12 mb-[60px]"
       >
+        <!-- education div  -->
         <div
           class="w-[365px] md:w-[600px] max-h-fit min-h-[440px] border rounded-2xl p-5 flex flex-col gap-5"
+          data-aos="slide-right"
         >
           <div
             class="h-9 w-full poppins-regular text-xl flex items-center text-[#EDFF00]"
@@ -540,6 +545,7 @@
         <!-- work experience  -->
         <div
           class="w-[365px] md:w-[600px] max-h-fit min-h-[440px] border rounded-2xl p-5 flex flex-col gap-5"
+          data-aos="slide-left"
         >
           <div
             class="h-9 w-full poppins-regular text-xl flex items-center text-[#EDFF00]"
@@ -553,7 +559,7 @@
           >
             <div class="w-full poppins-semibold text-lg">Home Tutor</div>
             <div class="w-full poppins-thin text-lg text-gray-300">
-              University life
+              Self Employee
             </div>
             <div class="w-full flex justify-end text-gray-300">2024</div>
           </div>
@@ -572,7 +578,10 @@
       </div>
       <div class="h-fit w-full center flex-wrap gap-8">
         <!-- box -->
-        <div class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0">
+        <div
+          class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0"
+          data-aos="slide-up"
+        >
           <div class="h-full w-1/3 center rounded-tl-2xl rounded-bl-2xl">
             <img
               class="h-[120px] w-[120px] rounded-md"
@@ -619,7 +628,10 @@
         </div>
 
         <!-- box -->
-        <div class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0">
+        <div
+          class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0"
+          data-aos="slide-up"
+        >
           <div class="h-full w-1/3 center rounded-tl-2xl rounded-bl-2xl">
             <img
               class="h-[120px] w-[120px] rounded-md"
@@ -762,14 +774,15 @@
           <div
             class="h-12 w-fit text-white poppins-normal border-t border-b border-white center"
           >
-            Highly Interested In
+            My Tech Stack
           </div>
         </div>
         <!-- below box area-->
         <div class="w-full h-fit center flex-wrap gap-6">
-          <!-- boxes for skills  -->
+          <!-- boxes for skills -->
           <div
             class="skillMainBox"
+            data-aos="slide-right"
             onmouseover="skillPageHover('box1')"
             onmouseleave="removeSkillPageHover('box1')"
           >
@@ -813,6 +826,7 @@
           <!-- boxes for frontend  -->
           <div
             class="skillMainBox"
+            data-aos="slide-up"
             onmouseover="skillPageHover('box2')"
             onmouseleave="removeSkillPageHover('box2')"
           >
@@ -876,6 +890,7 @@
           <!-- boxes for skills  -->
           <div
             class="skillMainBox"
+            data-aos="slide-left"
             onmouseover="skillPageHover('box3')"
             onmouseleave="removeSkillPageHover('box3')"
           >
@@ -912,6 +927,7 @@
           <!-- boxes for skills  -->
           <div
             class="skillMainBox"
+            data-aos="slide-right"
             onmouseover="skillPageHover('box4')"
             onmouseleave="removeSkillPageHover('box4')"
           >
@@ -941,6 +957,7 @@
           <!-- boxes for tools  -->
           <div
             class="skillMainBox"
+            data-aos="slide-up"
             onmouseover="skillPageHover('box5')"
             onmouseleave="removeSkillPageHover('box5')"
           >
@@ -1005,6 +1022,7 @@
           <!-- boxes for soft skills  -->
           <div
             class="skillMainBox"
+            data-aos="slide-left"
             onmouseover="skillPageHover('box6')"
             onmouseleave="removeSkillPageHover('box6')"
           >
@@ -1405,6 +1423,15 @@
           }
         );
       }
+    </script>
+
+    <!-- For Scroll Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 250,
+        duration: 900,
+      });
     </script>
   </body>
   <footer class="bg-gray-900 text-white py-6">
