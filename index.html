@@ -1,1523 +1,1188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ahshanul Haquc</title>
-    <link rel="icon" type="image/png" href="Title Pic.png" />
-    <link href="./output.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- google font  -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <!-- Scroll Animation Css  -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- this is for google analysis  -->
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-MRWT570C96"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahshanul Haquc</title>
+  <link rel="icon" type="image/png" href="Title Pic.png" />
+  <link href="./output.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- google font  -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Scroll Animation Css  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-      gtag("config", "G-MRWT570C96");
-    </script>
-  </head>
-  <body
-    class="overflow-y-scroll overflow-x-hidden h-fit w-[390px] md:h-screen md:w-screen"
-  >
-    <!-- nav bar -->
-    <div class="h-[60px] w-full center fixed z-50">
-      <div class="h-full w-[95%] bg-[#112749] rounded-[40px] flex mr-2 md:mr-0">
-        <div class="h-full w-3/4 md:w-1/4 flex">
-          <div class="h-full w-[60px] overflow-hidden center ml-1">
-            <img
-              class="h-[40px] w-[40px] rounded-[10px]"
-              src="MyImage.jpg"
-              alt=""
-            />
-          </div>
-          <div
-            class="h-full w-fit center ml-3 text-white text-lg md:text-2xl poppins-extralight"
-          >
-            Ahshanul Haquc
-          </div>
+  <!-- this is for google analysis  -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRWT570C96"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-MRWT570C96");
+  </script>
+</head>
+
+<body class="overflow-y-scroll overflow-x-hidden h-fit w-[390px] md:h-screen md:w-screen">
+  <!-- nav bar -->
+  <div class="h-[60px] w-full center fixed z-50">
+    <div class="h-full w-[95%] bg-[#112749] rounded-[40px] flex mr-2 md:mr-0">
+      <div class="h-full w-3/4 md:w-1/4 flex">
+        <div class="h-full w-[60px] overflow-hidden center ml-1">
+          <img class="h-[40px] w-[40px] rounded-[10px]" src="MyImage.jpg" alt="" />
         </div>
-        <!-- right side nav  -->
-        <!-- for phone -->
-        <div
-          class="h-full text-[#F5EFE7] w-1/4 flex justify-end items-center poppins-thin flex md:hidden"
-        >
-          <i
-            class="fa-solid fa-circle-chevron-down fa-2x mr-3 rotate-[270deg]"
-            id="menuIcon"
-            onclick="toggleMenu()"
-          ></i>
+        <div class="h-full w-fit center ml-3 text-white text-lg md:text-2xl poppins-extralight">
+          Ahshanul Haquc
         </div>
-        <!-- for desktop -->
-        <div
-          class="h-full text-[#F5EFE7] w-3/4 mr-[6px] flex justify-end items-center poppins-thin hidden md:flex"
-        >
-          <div
-            class="index h-full w-fit px-6 center duration-500 hover:cursor-pointer hover:text-green-400"
-            onclick="window.location.href='index.html'"
-          >
-            Home
-          </div>
-          <div
-            class="h-full w-fit px-6 center About duration-500 hover:cursor-pointer hover:text-green-400"
-            onclick="window.location.href='about.html'"
-          >
-            About
-          </div>
-          <div
-            class="h-full w-fit px-6 center Career duration-500 hover:cursor-pointer hover:text-green-400"
-            onclick="window.location.href='career.html'"
-          >
-            Career
-          </div>
-          <div
-            class="h-full w-fit px-6 center Projects duration-500 hover:cursor-pointer hover:text-green-400"
-            onclick="window.location.href='projects.html'"
-          >
-            Projects
-          </div>
-          <div
-            class="h-full w-fit px-6 center Skills duration-500 hover:cursor-pointer hover:text-green-400"
-            onclick="window.location.href='skills.html'"
-          >
-            Skills
-          </div>
-          <div
-            class="h-full w-fit px-6 center Acheivements duration-500 hover:cursor-pointer hover:text-green-400"
-            onclick="window.location.href='acheivement.html'"
-          >
-            Activities
-          </div>
-          <div
-            class="buttons poppins-thin"
-            onclick="window.location.href='contact.html'"
-          >
-            Contact me
-          </div>
-          <!-- etate education dewa jete pare -->
+      </div>
+      <!-- right side nav  -->
+      <!-- for phone -->
+      <div class="h-full text-[#F5EFE7] w-1/4 flex justify-end items-center poppins-thin flex md:hidden">
+        <i class="fa-solid fa-circle-chevron-down fa-2x mr-3 rotate-[270deg]" id="menuIcon" onclick="toggleMenu()"></i>
+      </div>
+      <!-- for desktop -->
+      <div class="h-full text-[#F5EFE7] w-3/4 mr-[6px] flex justify-end items-center poppins-thin hidden md:flex">
+        <div class="index h-full w-fit px-6 center duration-500 hover:cursor-pointer hover:text-green-400"
+          onclick="window.location.href='index.html'">
+          Home
         </div>
+        <div class="h-full w-fit px-6 center About duration-500 hover:cursor-pointer hover:text-green-400"
+          onclick="window.location.href='about.html'">
+          About
+        </div>
+        <div class="h-full w-fit px-6 center Career duration-500 hover:cursor-pointer hover:text-green-400"
+          onclick="window.location.href='career.html'">
+          Career
+        </div>
+        <div class="h-full w-fit px-6 center Projects duration-500 hover:cursor-pointer hover:text-green-400"
+          onclick="window.location.href='projects.html'">
+          Projects
+        </div>
+        <div class="h-full w-fit px-6 center Skills duration-500 hover:cursor-pointer hover:text-green-400"
+          onclick="window.location.href='skills.html'">
+          Skills
+        </div>
+        <div class="h-full w-fit px-6 center Acheivements duration-500 hover:cursor-pointer hover:text-green-400"
+          onclick="window.location.href='acheivement.html'">
+          Activities
+        </div>
+        <div class="buttons poppins-thin" onclick="window.location.href='contact.html'">
+          Contact me
+        </div>
+        <!-- etate education dewa jete pare -->
       </div>
     </div>
-    <!-- showing popup while clicking menu in phone  -->
-    <div
-      class="h-screen w-screen bg-[#213555] text-white pt-[80px] fixed top-0 left-[-400px] z-40 flex flex-col justify-start items-center poppins-regular text-xl duration-500 md:hidden"
-      id="menuDiv"
-    >
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='index.html'"
-      >
-        Home
-      </div>
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='about.html'"
-      >
-        About
-      </div>
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='career.html'"
-      >
-        Career
-      </div>
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='projects.html'"
-      >
-        Projects
-      </div>
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='skills.html'"
-      >
-        Skills
-      </div>
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='acheivement.html'"
-      >
-        Activities
-      </div>
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='contact.html'"
-      >
-        Contact me
-      </div>
+  </div>
+  <!-- showing popup while clicking menu in phone  -->
+  <div
+    class="h-screen w-screen bg-[#213555] text-white pt-[80px] fixed top-0 left-[-400px] z-40 flex flex-col justify-start items-center poppins-regular text-xl duration-500 md:hidden"
+    id="menuDiv">
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='index.html'">
+      Home
     </div>
-    <!-- ----------------end--------- -->
-    <!-- Section 1: home page  -->
-    <div
-      class="section min-h-fit md:min-h-[100vh] md:max-h-fit w-[100vw] hidden md:flex flex-col bg-gradient-to-r from-[#284065] to-[#213555] pb-8 md:pb-0 md:pt-[5vh]"
-    >
-      <div class="md:h-screen h-fit w-screen center">
-        <div
-          class="h-full w-full flex flex-col justify-center items-center md:flex-row"
-        >
-          <!-- name part (left side) -->
-          <div
-            class="h-1/2 w-full md:h-full md:w-1/2 flex flex-col justify-center items-center mt-[80px] md:mt-0"
-          >
-            <!-- name text part -->
-            <div class="w-full flex flex-col items-center">
-              <div
-                class="w-full h-3/4 p-3 md:pl-10 flex flex-col items-end justify-end"
-              >
-                <!-- <div class="w-full h-[200px] bg-gray-500 flex"> -->
-                <div class="w-full h-[200px] relative flex">
-                  <div
-                    class="h-full w-[80px] md:w-[180px] text-[#F5EFE7] text-[70px] md:text-[150px] poppins-black relative bottom-0 left-0"
-                  >
-                    Hi
-                  </div>
-                  <div class="h-full grow pt-6 md:pt-[77px]">
-                    <div
-                      class="w-full h-fit poppins-extrabold text-xl md:text-2xl text-[#F5EFE7]"
-                    >
-                      This is...
-                    </div>
-                    <div
-                      class="w-full h-fit poppins-black text-xl md:text-[50px] text-[#edff00] md:pt-[25px]"
-                    >
-                      Ahshanul Haquc
-                    </div>
-                  </div>
-                </div>
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='about.html'">
+      About
+    </div>
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='career.html'">
+      Career
+    </div>
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='projects.html'">
+      Projects
+    </div>
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='skills.html'">
+      Skills
+    </div>
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='acheivement.html'">
+      Activities
+    </div>
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='contact.html'">
+      Contact me
+    </div>
+  </div>
+  <!-- ----------------end--------- -->
+  <!-- Section 1: home page  -->
+  <div
+    class="section min-h-fit md:min-h-[100vh] md:max-h-fit w-[100vw] hidden md:flex flex-col bg-gradient-to-r from-[#284065] to-[#213555] pb-8 md:pb-0 md:pt-[5vh]">
+    <div class="md:h-screen h-fit w-screen center">
+      <div class="h-full w-full flex flex-col justify-center items-center md:flex-row">
+        <!-- name part (left side) -->
+        <div class="h-1/2 w-full md:h-full md:w-1/2 flex flex-col justify-center items-center mt-[80px] md:mt-0">
+          <!-- name text part -->
+          <div class="w-full flex flex-col items-center">
+            <div class="w-full h-3/4 p-3 md:pl-10 flex flex-col items-end justify-end">
+              <!-- <div class="w-full h-[200px] bg-gray-500 flex"> -->
+              <div class="w-full h-[200px] relative flex">
                 <div
-                  class="w-full h-[50px] mb-1 md:mb-5 poppins-extrabold text-md md:text-[28px] text-[#F5EFE7]"
-                >
-                  Passionate Full-Stack Web Developer |<br />Turning Ideas into
-                  Interactive Experiences
+                  class="h-full w-[80px] md:w-[180px] text-[#F5EFE7] text-[70px] md:text-[150px] poppins-black relative bottom-0 left-0">
+                  Hi
                 </div>
-              </div>
-              <div
-                class="w-full h-1/4 p-3 md:pl-10 md:pt-12 poppins-thin text-sm md:text-xl text-white flex items-center"
-              >
-                I specialize in building responsive and dynamic websites using
-                modern technologies like JavaScript, Node.js, and MongoDB.
-              </div>
-            </div>
-            <!-- Connect icons -->
-            <div class="h-1/5 w-full flex pl-3 pt-1 md:pl-10 md:pt-6">
-              <!-- follow icons  -->
-              <div class="">
-                <div class="poppins-thin text-white">Follow me on :</div>
-                <div class="mt-2 w-full h-11 flex gap-2 md:gap-4 items-center">
-                  <div class="animateImage">
-                    <img
-                      class="h-9 w-9 rounded-full hoverScale"
-                      src="Social Medio Picture/facebook.png"
-                      alt=""
-                    />
+                <div class="h-full grow pt-6 md:pt-[77px]">
+                  <div class="w-full h-fit poppins-extrabold text-xl md:text-2xl text-[#F5EFE7]">
+                    This is...
                   </div>
-                  <div class="animateImage">
-                    <img
-                      class="h-9 w-9 rounded-full hoverScale"
-                      src="Social Medio Picture/instagram.png"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="h-9 w-9 bg-white overflow-hidden rounded-full animateImage"
-                    onclick="window.open('https://github.com/Ahshan-Haquc', '_blank')"
-                  >
-                    <img
-                      class="h-9 w-9 rounded-full hoverScale"
-                      src="Social Medio Picture/github.png"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="animateImage"
-                    onclick="window.open('https://www.linkedin.com/in/ahshanul-haquc-82382a337/', '_blank')"
-                  >
-                    <img
-                      class="h-9 w-9 rounded-full hoverScale"
-                      src="Social Medio Picture/linkedin.png"
-                      alt=""
-                    />
-                  </div>
-                  <!-- Download icons -->
-                  <a href="My_Resumme.pdf" download>
-                    <div
-                      class="buttons hoverScale poppins-thin"
-                      style="background-color: #00a300; color: white"
-                    >
-                      <i class="fa-solid fa-download mr-2"></i>Resume
-                    </div>
-                  </a>
-                  <div
-                    class="buttons hoverScale poppins-thin relative left-[-8px]"
-                    style="background-color: #00a300; color: white"
-                    onclick="previewAndDownloadPDF()"
-                  >
-                    <i class="fa-solid fa-download mr-2"></i>CV
+                  <div class="w-full h-fit poppins-black text-xl md:text-[50px] text-[#edff00] md:pt-[25px]">
+                    Ahshanul Haquc
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- picture part (rigth side)  -->
-          <div class="h-1/2 w-full md:h-full md:w-1/2 center">
-            <div class="relative hidden md:flex">
-              <div>
-                <img
-                  class="h-[200px] md:h-[300px] w-[200px] md:w-[300px] rounded-full border-[2px]"
-                  src="MyImage.jpg"
-                  alt=""
-                />
-              </div>
-              <div
-                class="dot h-2 w-2 rounded-full bg-white absolute top-5 right-5 sm:hidden md:flex"
-              ></div>
-              <div
-                class="dot h-2 w-2 rounded-full bg-white absolute top-[-100px] right-4"
-              ></div>
-              <div
-                class="dot h-2 w-2 rounded-full bg-white absolute top-[-110px] right-[-100px]"
-              ></div>
-              <div
-                class="dot h-2 w-2 rounded-full bg-white absolute top-[110px] right-[-100px]"
-              ></div>
-              <div
-                class="dot h-3 w-3 rounded-full bg-white absolute top-[50px] right-[-100px]"
-              ></div>
-              <div
-                class="dot h-4 w-4 rounded-full bg-white absolute top-[-35px] right-[65px]"
-              ></div>
-              <div
-                class="dot h-4 w-4 rounded-full bg-white absolute top-[-35px] right-[-50px]"
-              ></div>
-              <div
-                class="dot h-4 w-4 rounded-full bg-white absolute top-[190px] right-[-40px]"
-              ></div>
-
-              <div
-                class="dot h-2 w-2 rounded-full bg-white absolute bottom-12 left-[-2rem]"
-              ></div>
-              <div
-                class="dot h-2 w-2 rounded-full bg-white absolute bottom-[-2rem] left-[5.5rem]"
-              ></div>
-              <div
-                class="dot h-4 w-4 rounded-full bg-white absolute bottom-[-5rem] left-[19rem]"
-              ></div>
-              <div
-                class="dot h-2 w-2 rounded-full bg-white absolute bottom-[-1rem] left-[-3rem]"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 2: About -->
-    <div
-      class="section min-h-screen max-h-fit w-screen pt-[10vh] md:pt[5vh] flex flex-col md:flex-row bg-gradient-to-r from-[#284065] to-[#213555] text-white"
-    >
-      <!-- left side part -->
-      <div class="w-full h-1/2 md:w-1/2 md:h-full center" data-aos="zoom-in">
-        <img class="h-[300px] md:h-[500px]" src="aboutPagePic.png" alt="" />
-      </div>
-      <!-- right side part -->
-      <div
-        class="w-full h-1/2 p-3 md:w-1/2 md:h-full flex flex-col justify-center items-center gap-1 md:gap-5 md:pr-[60px]"
-        data-aos="zoom-in"
-      >
-        <div class="h-fit w-full poppins-regular text-sm md:text-xl">
-          <span>-</span>About me
-        </div>
-        <div class="h-fit w-full text-xl md:text-4xl">
-          <span class="poppins-bold">Who is</span>&nbsp;<span
-            class="poppins-regular text-[#EDFF00]"
-            >Ahshanul Haquc ?</span
-          >
-        </div>
-        <div
-          class="h-fit w-full poppins-thin text-sm text-gray-300 md:text-white"
-        >
-          I'm Ahshanul Haquc, a creative and detail-oriented Full-Stack Web
-          Developer with a passion for building sleek, responsive, and
-          user-friendly websites. Whether it's crafting interactive front-end
-          designs or developing robust back-end solutions, I love turning
-          complex problems into simple, elegant code. With expertise in
-          JavaScript, Node.js, and MongoDB, I thrive on bringing innovative
-          ideas to life and creating seamless digital experiences.
-        </div>
-        <div class="h-fit w-full mt-5 md:mt-0 flex gap-1 md:gap-3">
-          <div class="box">
-            <div class="poppins-black text-4xl">3+</div>
-            <div class="poppins-regular text-[8px] md:text-[16px]">
-              Project Completed
-            </div>
-          </div>
-          <div class="box">
-            <div class="poppins-black text-4xl">1</div>
-            <div class="poppins-regular text-[8px] md:text-[16px]">
-              Industry Covering
-            </div>
-          </div>
-          <div class="box">
-            <div class="poppins-black text-4xl">0+</div>
-            <div class="poppins-regular text-[8px] md:text-[16px]">
-              Years of Experience
-            </div>
-          </div>
-        </div>
-        <div class="h-fit w-full mt-5 md:mt-[1rem] flex gap-2">
-          <div
-            class="buttons w-[150px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
-            onclick="showAboutPagePopup('My Journey')"
-          >
-            My Journey
-          </div>
-          <div
-            class="buttons w-[150px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
-            onclick="showAboutPagePopup('My Interests')"
-          >
-            My Interests
-          </div>
-          <div
-            class="buttons w-[200px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
-            onclick="showAboutPagePopup('Why contact me')"
-          >
-            Why contact me ?
-          </div>
-        </div>
-        <!-- this will be show in Phone screen  -->
-        <div class="h-fit w-full mt-1 md:hidden">
-          <!-- Follow icons -->
-          <div class="h-fit w-full pt-1">
-            <div class="poppins-thin text-white">Follow me on :</div>
-            <div class="mt-2 w-full h-11 flex gap-2 md:gap-4 items-center">
-              <div class="animateImage">
-                <img
-                  class="h-9 w-9 rounded-full hoverScale"
-                  src="Social Medio Picture/facebook.png"
-                  alt=""
-                />
-              </div>
-              <div class="animateImage">
-                <img
-                  class="h-9 w-9 rounded-full hoverScale"
-                  src="Social Medio Picture/instagram.png"
-                  alt=""
-                />
-              </div>
-              <div class="animateImage">
-                <img
-                  class="h-9 w-9 rounded-full hoverScale"
-                  src="Social Medio Picture/facebook.png"
-                  alt=""
-                />
-              </div>
-              <div
-                class="h-9 w-9 bg-white overflow-hidden rounded-full animateImage"
-                onclick="window.open('https://github.com/Ahshan-Haquc', '_blank')"
-              >
-                <img
-                  class="h-9 w-9 rounded-full hoverScale"
-                  src="Social Medio Picture/github.png"
-                  alt=""
-                />
-              </div>
-              <div
-                class="animateImage"
-                onclick="window.open('https://www.linkedin.com/in/ahshanul-haquc-82382a337/', '_blank')"
-              >
-                <img
-                  class="h-9 w-9 rounded-full hoverScale"
-                  src="Social Medio Picture/linkedin.png"
-                  alt=""
-                />
-              </div>
-              <div class="buttons hoverScale text-sm">
-                <a href="My_CV.pdf" download>Download CV</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- this div for showing popup while clicking about page buttons -->
-    <div
-      class="fixed top-0 left-0 h-screen w-screen center bg-[#00000071] z-10 hidden"
-      id="aboutPagePopupBox"
-    >
-      <div
-        id="insideTextDiv"
-        class="relative h-[400px] w-[300px] md:w-[700px] p-5 rounded-xl bg-yellow-500 border border-green-500 text-white shadow-lg opacity-0 scale-75 pointer-events-none transition duration-200 ease-out"
-      >
-        <div
-          class="absolute top-1 right-1 h-12 w-12 p-2 rounded-full center duration-300 hover:bg-white hover:text-red-500 cursor-pointer"
-          id="aboutPopupHide"
-          onclick="hideAboutPagePopup()"
-        >
-          <i class="fa-solid fa-xmark fa-xl hover:scale-115"></i>
-        </div>
-        <div
-          class="pt-10 h-full poppins-thin text-lg text-black text-center center"
-          id="aboutPopupText"
-        >
-          <!-- Text will appear here dynamically -->
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 3: Education & Experience -->
-    <div
-      class="section min-h-screen max-h-fit w-screen center flex-col bg-gradient-to-r from-[#284065] to-[#213555] text-white"
-    >
-      <div
-        class="w-full h-2/6 center flex-col poppins-bold text-2xl md:text-5xl mt-[80px] md:mt-[15vh] mb-[60px] bg-none md:bg-[#112749]"
-      >
-        <div>My <span class="text-[#EDFF00]">Academic</span> &</div>
-        <div><span class="text-[#EDFF00]">Profesional</span> Journey</div>
-      </div>
-      <div
-        class="w-full h-4/6 px-3 md:px-0 flex flex-col md:flex-row justify-center items-start gap-12 mb-[60px]"
-      >
-        <!-- education div  -->
-        <div
-          class="w-[365px] md:w-[600px] max-h-fit min-h-[440px] border rounded-2xl p-5 flex flex-col gap-5"
-          data-aos="zoom-in"
-        >
-          <div
-            class="h-9 w-full poppins-regular text-xl flex items-center text-[#EDFF00]"
-          >
-            <img class="h-9 w-9 mr-4" src="images/education.png" alt="" />
-            Education
-          </div>
-          <!-- box -->
-          <div
-            class="h-[100px] w-[330px] md:w-full bg-[#f9eee114] rounded-xl px-4 py-2 hover:shadow-lg"
-          >
-            <div class="w-full poppins-semibold text-lg md:text-2xl">
-              Green University of Bangladesh
-            </div>
-            <div class="w-full poppins-thin text-lg text-gray-300">
-              Bsc in CSE
-            </div>
-            <div class="w-full flex justify-end text-gray-300">2021 - 2025</div>
-          </div>
-          <!-- box -->
-          <div
-            class="h-[100px] w-[330px] md:w-full bg-[#f9eee114] rounded-xl px-4 py-2 hover:shadow-lg"
-          >
-            <div class="w-full poppins-semibold text-md md:text-2xl">
-              Kalihati Shah-jahan Shiraz College
-            </div>
-            <div class="w-full poppins-thin text-lg text-gray-300">Science</div>
-            <div class="w-full flex justify-end text-gray-300">2017 - 2020</div>
-          </div>
-          <!-- box -->
-          <div
-            class="h-[100px] w-[330px] md:w-full bg-[#f9eee114] rounded-xl px-4 py-2 hover:shadow-lg"
-          >
-            <div class="w-full poppins-semibold text-lg md:text-2xl">
-              Kalihati R.S. Pilot High School
-            </div>
-            <div class="w-full poppins-thin text-lg text-gray-300">Science</div>
-            <div class="w-full flex justify-end text-gray-300">2016 - 2017</div>
-          </div>
-        </div>
-
-        <!-- work experience  -->
-        <div
-          class="w-[365px] md:w-[600px] max-h-fit min-h-[440px] border rounded-2xl p-5 flex flex-col gap-5"
-          data-aos="zoom-in"
-        >
-          <div
-            class="h-9 w-full poppins-regular text-xl flex items-center text-[#EDFF00]"
-          >
-            <img class="h-9 w-9 mr-4" src="images/experience.png" alt="" />
-            Work Experience
-          </div>
-          <!-- box -->
-          <div
-            class="min-h-[100px] max-h-fit w-[330px] md:w-full bg-[#f9eee114] rounded-xl px-4 py-2 hover:shadow-lg"
-          >
-            <div class="w-full poppins-semibold text-lg">
-              Full-stack Web Developer - Intern
-            </div>
-            <div class="w-full poppins-thin text-lg text-gray-300">
-              9am Solution
-            </div>
-            <div class="w-full flex text-gray-300 text-sm">
-              House-5, Road-6/A, Sector-4, Uttara, Dhaka 1230
-            </div>
-            <div class="w-full flex justify-end text-gray-300">
-              June 2025 - Present
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 4: Projects -->
-    <div
-      class="section max-h-fit min-h-screen w-screen flex justify-center items-center flex-col bg-gradient-to-r from-[#284065] to-[#213555] text-white"
-    >
-      <div
-        class="w-full h-fit center flex-col poppins-bold text-5xl mt-[80px] md:mt-[15vh] mb-[60px] bg-none md:bg-[#112749]"
-      >
-        <div>My <span class="text-[#EDFF00]">Projects</span></div>
-      </div>
-      <div class="h-fit w-full center flex-wrap gap-8">
-        <!-- box -->
-        <div
-          class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0"
-          data-aos="slide-up"
-        >
-          <div class="h-full w-1/3 center rounded-tl-2xl rounded-bl-2xl">
-            <img
-              class="h-[120px] w-[120px] rounded-md"
-              src="projectTitleLogo.png"
-              alt=""
-            />
-          </div>
-          <div class="h-full w-2/3 relative py-3 p-r-3">
-            <div class="h-fit w-full flex justify-between">
-              <div class="poppins-bold text-2xl text-[#fb7500]">
-                Green University Student Bridge
+              <div class="w-full h-[50px] mb-1 md:mb-5 poppins-extrabold text-md md:text-[28px] text-[#F5EFE7]">
+                Passionate Full-Stack Web Developer |<br />Turning Ideas into
+                Interactive Experiences
               </div>
             </div>
             <div
-              class="h-fit w-full poppins-normal text-[10px] md:text-sm mt-2 pr-3"
-            >
-              Green University StudentBridge is a web platform designed to help
-              university students easily find essential services in one place.
-              It offers features like room rentals (To-let), buying & selling,
-              meal sharing, lost & found, and blood donation.
+              class="w-full h-1/4 p-3 md:pl-10 md:pt-12 poppins-thin text-sm md:text-xl text-white flex items-center">
+              I specialize in building responsive and dynamic websites using
+              modern technologies like React.js, Node.js, and MongoDB.
             </div>
-            <!-- buttons -->
-            <div class="poppins-regular absolute bottom-3 flex gap-2">
-              <div
-                class="animateImage button2 center"
-                onclick="window.open('https://github.com/Ahshan-Haquc/ToLetGreenUniversity', '_blank')"
-              >
-                <i class="fa-brands fa-github fa-2x"></i>
+          </div>
+          <!-- Connect icons -->
+          <div class="h-1/5 w-full flex pl-3 pt-1 md:pl-10 md:pt-6">
+            <!-- follow icons  -->
+            <div class="">
+              <div class="poppins-thin text-white">Follow me on :</div>
+              <div class="mt-2 w-full h-11 flex gap-2 md:gap-4 items-center">
+                <div class="animateImage">
+                  <img class="h-9 w-9 rounded-full hoverScale" src="Social Medio Picture/facebook.png" alt="" />
+                </div>
+                <div class="animateImage">
+                  <img class="h-9 w-9 rounded-full hoverScale" src="Social Medio Picture/instagram.png" alt="" />
+                </div>
+                <div class="h-9 w-9 bg-white overflow-hidden rounded-full animateImage"
+                  onclick="window.open('https://github.com/Ahshan-Haquc', '_blank')">
+                  <img class="h-9 w-9 rounded-full hoverScale" src="Social Medio Picture/github.png" alt="" />
+                </div>
+                <div class="animateImage"
+                  onclick="window.open('https://www.linkedin.com/in/ahshanul-haquc-82382a337/', '_blank')">
+                  <img class="h-9 w-9 rounded-full hoverScale" src="Social Medio Picture/linkedin.png" alt="" />
+                </div>
+                <!-- Download icons -->
+                <a href="My_Resumme.pdf" download>
+                  <div class="buttons hoverScale poppins-thin" style="background-color: #00a300; color: white">
+                    <i class="fa-solid fa-download mr-2"></i>Resume
+                  </div>
+                </a>
+                <div class="buttons hoverScale poppins-thin relative left-[-8px]"
+                  style="background-color: #00a300; color: white" onclick="previewAndDownloadPDF()">
+                  <i class="fa-solid fa-download mr-2"></i>CV
+                </div>
               </div>
-              <div
-                class="animateImage button2 center"
-                onclick="window.open('https://www.figma.com/design/C5zIkI0wqOYStZydom2d9w/ToLetGreenUniversity--Only-me-?node-id=0-1&p=f&t=qXLnXe55iOZ5QSNI-0', '_blank')"
-              >
-                <i class="fa-brands fa-figma fa-2x"></i>
-              </div>
-              <!-- <div
+            </div>
+          </div>
+        </div>
+        <!-- picture part (rigth side)  -->
+        <div class="h-1/2 w-full md:h-full md:w-1/2 center">
+          <div class="relative hidden md:flex">
+            <div>
+              <img class="h-[200px] md:h-[300px] w-[200px] md:w-[300px] rounded-full border-[2px]" src="MyImage.jpg"
+                alt="" />
+            </div>
+            <div class="dot h-2 w-2 rounded-full bg-white absolute top-5 right-5 sm:hidden md:flex"></div>
+            <div class="dot h-2 w-2 rounded-full bg-white absolute top-[-100px] right-4"></div>
+            <div class="dot h-2 w-2 rounded-full bg-white absolute top-[-110px] right-[-100px]"></div>
+            <div class="dot h-2 w-2 rounded-full bg-white absolute top-[110px] right-[-100px]"></div>
+            <div class="dot h-3 w-3 rounded-full bg-white absolute top-[50px] right-[-100px]"></div>
+            <div class="dot h-4 w-4 rounded-full bg-white absolute top-[-35px] right-[65px]"></div>
+            <div class="dot h-4 w-4 rounded-full bg-white absolute top-[-35px] right-[-50px]"></div>
+            <div class="dot h-4 w-4 rounded-full bg-white absolute top-[190px] right-[-40px]"></div>
+
+            <div class="dot h-2 w-2 rounded-full bg-white absolute bottom-12 left-[-2rem]"></div>
+            <div class="dot h-2 w-2 rounded-full bg-white absolute bottom-[-2rem] left-[5.5rem]"></div>
+            <div class="dot h-4 w-4 rounded-full bg-white absolute bottom-[-5rem] left-[19rem]"></div>
+            <div class="dot h-2 w-2 rounded-full bg-white absolute bottom-[-1rem] left-[-3rem]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: About -->
+  <div
+    class="section min-h-screen max-h-fit w-screen pt-[10vh] md:pt[5vh] flex flex-col md:flex-row bg-gradient-to-r from-[#284065] to-[#213555] text-white">
+    <!-- left side part -->
+    <div class="w-full h-1/2 md:w-1/2 md:h-full center" data-aos="zoom-in">
+      <img class="h-[300px] md:h-[500px]" src="aboutPagePic.png" alt="" />
+    </div>
+    <!-- right side part -->
+    <div
+      class="w-full h-1/2 p-3 md:w-1/2 md:h-full flex flex-col justify-center items-center gap-1 md:gap-5 md:pr-[60px]"
+      data-aos="zoom-in">
+      <div class="h-fit w-full poppins-regular text-sm md:text-xl">
+        <span>-</span>About me
+      </div>
+      <div class="h-fit w-full text-xl md:text-4xl">
+        <span class="poppins-bold">Who is</span>&nbsp;<span class="poppins-regular text-[#EDFF00]">Ahshanul Haquc
+          ?</span>
+      </div>
+      <div class="h-fit w-full poppins-thin text-sm text-gray-300 md:text-white">
+        I'm Ahshanul Haquc, a creative and detail-oriented Full-Stack Web
+        Developer with a passion for building sleek, responsive, and
+        user-friendly websites. Whether it's crafting interactive front-end
+        designs or developing robust back-end solutions, I love turning
+        complex problems into simple, elegant code. With expertise in
+        JavaScript, Node.js, and MongoDB, I thrive on bringing innovative
+        ideas to life and creating seamless digital experiences.
+      </div>
+      <div class="h-fit w-full mt-5 md:mt-0 flex gap-1 md:gap-3">
+        <div class="box">
+          <div class="poppins-black text-4xl">4+</div>
+          <div class="poppins-regular text-[8px] md:text-[16px]">
+            Project Completed
+          </div>
+        </div>
+        <div class="box">
+          <div class="poppins-black text-4xl">2</div>
+          <div class="poppins-regular text-[8px] md:text-[16px]">
+            Industry Covering
+          </div>
+        </div>
+        <div class="box">
+          <div class="poppins-black text-4xl">3+</div>
+          <div class="poppins-regular text-[8px] md:text-[16px]">
+            Months of Experience
+          </div>
+        </div>
+      </div>
+      <div class="h-fit w-full mt-5 md:mt-[1rem] flex gap-2">
+        <div
+          class="buttons w-[150px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
+          onclick="showAboutPagePopup('My Journey')">
+          My Journey
+        </div>
+        <div
+          class="buttons w-[150px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
+          onclick="showAboutPagePopup('My Interests')">
+          My Interests
+        </div>
+        <div
+          class="buttons w-[200px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
+          onclick="showAboutPagePopup('Why contact me')">
+          Why contact me ?
+        </div>
+      </div>
+      <!-- this will be show in Phone screen  -->
+      <div class="h-fit w-full mt-1 md:hidden">
+        <!-- Follow icons -->
+        <div class="h-fit w-full pt-1">
+          <div class="poppins-thin text-white">Follow me on :</div>
+          <div class="mt-2 w-full h-11 flex gap-2 md:gap-4 items-center">
+            <div class="animateImage">
+              <img class="h-9 w-9 rounded-full hoverScale" src="Social Medio Picture/facebook.png" alt="" />
+            </div>
+            <div class="animateImage">
+              <img class="h-9 w-9 rounded-full hoverScale" src="Social Medio Picture/instagram.png" alt="" />
+            </div>
+            <div class="animateImage">
+              <img class="h-9 w-9 rounded-full hoverScale" src="Social Medio Picture/facebook.png" alt="" />
+            </div>
+            <div class="h-9 w-9 bg-white overflow-hidden rounded-full animateImage"
+              onclick="window.open('https://github.com/Ahshan-Haquc', '_blank')">
+              <img class="h-9 w-9 rounded-full hoverScale" src="Social Medio Picture/github.png" alt="" />
+            </div>
+            <div class="animateImage"
+              onclick="window.open('https://www.linkedin.com/in/ahshanul-haquc-82382a337/', '_blank')">
+              <img class="h-9 w-9 rounded-full hoverScale" src="Social Medio Picture/linkedin.png" alt="" />
+            </div>
+            <div class="buttons hoverScale text-sm">
+              <a href="My_CV.pdf" download>Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- this div for showing popup while clicking about page buttons -->
+  <div class="fixed top-0 left-0 h-screen w-screen center bg-[#00000071] z-10 hidden" id="aboutPagePopupBox">
+    <div id="insideTextDiv"
+      class="relative h-[400px] w-[300px] md:w-[700px] p-5 rounded-xl bg-yellow-500 border border-green-500 text-white shadow-lg opacity-0 scale-75 pointer-events-none transition duration-200 ease-out">
+      <div
+        class="absolute top-1 right-1 h-12 w-12 p-2 rounded-full center duration-300 hover:bg-white hover:text-red-500 cursor-pointer"
+        id="aboutPopupHide" onclick="hideAboutPagePopup()">
+        <i class="fa-solid fa-xmark fa-xl hover:scale-115"></i>
+      </div>
+      <div class="pt-10 h-full poppins-thin text-lg text-black text-center center" id="aboutPopupText">
+        <!-- Text will appear here dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3: Education & Experience -->
+  <div
+    class="section min-h-screen max-h-fit w-screen center flex-col bg-gradient-to-r from-[#284065] to-[#213555] text-white">
+    <div
+      class="w-full h-2/6 center flex-col poppins-bold text-2xl md:text-5xl mt-[80px] md:mt-[15vh] mb-[60px] bg-none md:bg-[#112749]">
+      <div>My <span class="text-[#EDFF00]">Academic</span> &</div>
+      <div><span class="text-[#EDFF00]">Profesional</span> Journey</div>
+    </div>
+    <div class="w-full h-4/6 px-3 md:px-0 flex flex-col md:flex-row justify-center items-start gap-12 mb-[60px]">
+      <!-- education div  -->
+      <div class="w-[365px] md:w-[600px] max-h-fit min-h-[440px] border rounded-2xl p-5 flex flex-col gap-5"
+        data-aos="zoom-in">
+        <div class="h-9 w-full poppins-regular text-xl flex items-center text-[#EDFF00]">
+          <img class="h-9 w-9 mr-4" src="images/education.png" alt="" />
+          Education
+        </div>
+        <!-- box -->
+        <div class="h-[100px] w-[330px] md:w-full bg-[#f9eee114] rounded-xl px-4 py-2 hover:shadow-lg">
+          <div class="w-full poppins-semibold text-lg md:text-2xl">
+            Green University of Bangladesh
+          </div>
+          <div class="w-full poppins-thin text-lg text-gray-300">
+            Bsc in CSE
+          </div>
+          <div class="w-full flex justify-end text-gray-300">2021 - 2025</div>
+        </div>
+        <!-- box -->
+        <div class="h-[100px] w-[330px] md:w-full bg-[#f9eee114] rounded-xl px-4 py-2 hover:shadow-lg">
+          <div class="w-full poppins-semibold text-md md:text-2xl">
+            Kalihati Shah-jahan Shiraz College
+          </div>
+          <div class="w-full poppins-thin text-lg text-gray-300">Science</div>
+          <div class="w-full flex justify-end text-gray-300">2017 - 2020</div>
+        </div>
+        <!-- box -->
+        <div class="h-[100px] w-[330px] md:w-full bg-[#f9eee114] rounded-xl px-4 py-2 hover:shadow-lg">
+          <div class="w-full poppins-semibold text-lg md:text-2xl">
+            Kalihati R.S. Pilot High School
+          </div>
+          <div class="w-full poppins-thin text-lg text-gray-300">Science</div>
+          <div class="w-full flex justify-end text-gray-300">2016 - 2017</div>
+        </div>
+      </div>
+
+      <!-- work experience  -->
+      <div class="w-[365px] md:w-[600px] max-h-fit min-h-[440px] border rounded-2xl p-5 flex flex-col gap-5"
+        data-aos="zoom-in">
+        <div class="h-9 w-full poppins-regular text-xl flex items-center text-[#EDFF00]">
+          <img class="h-9 w-9 mr-4" src="images/experience.png" alt="" />
+          Work Experience
+        </div>
+        <!-- box -->
+        <div class="min-h-[100px] max-h-fit w-[330px] md:w-full bg-[#f9eee114] rounded-xl px-4 py-2 hover:shadow-lg">
+          <div class="w-full poppins-semibold text-lg">
+            Intern - Frontend Web Developer
+          </div>
+          <div class="w-full poppins-thin text-lg text-gray-300">
+            Telerism Ltd
+          </div>
+          <div class="w-full flex text-gray-300 text-sm">
+            Flat-A1, House-06, Road-11, Sector-01, Dhaka 1230
+          </div>
+          <div class="w-full flex justify-end text-gray-300">
+            July 2025 - Present
+          </div>
+        </div>
+        <!-- box -->
+        <div class="min-h-[100px] max-h-fit w-[330px] md:w-full bg-[#f9eee114] rounded-xl px-4 py-2 hover:shadow-lg">
+          <div class="w-full poppins-semibold text-lg">
+            Intern - Full-stack Web Developer
+          </div>
+          <div class="w-full poppins-thin text-lg text-gray-300">
+            9am Solution
+          </div>
+          <div class="w-full flex text-gray-300 text-sm">
+            House-5, Road-6/A, Sector-4, Uttara, Dhaka 1230
+          </div>
+          <div class="w-full flex justify-end text-gray-300">
+            May 2025 - July 2025
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Projects -->
+  <div
+    class="section max-h-fit min-h-screen w-screen flex justify-center items-center flex-col bg-gradient-to-r from-[#284065] to-[#213555] text-white">
+    <div
+      class="w-full h-fit center flex-col poppins-bold text-5xl mt-[80px] md:mt-[15vh] mb-[60px] bg-none md:bg-[#112749]">
+      <div>My <span class="text-[#EDFF00]">Projects</span></div>
+    </div>
+    <div class="h-fit w-full center flex-wrap gap-8">
+      <!-- box -->
+      <div class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0" data-aos="slide-up">
+        <div class="h-full w-1/3 center rounded-tl-2xl rounded-bl-2xl">
+          <img class="h-[120px] w-[120px] rounded-md" src="projectTitleLogo.png" alt="" />
+        </div>
+        <div class="h-full w-2/3 relative py-3 p-r-3">
+          <div class="h-fit w-full flex justify-between">
+            <div class="poppins-bold text-2xl text-[#fb7500]">
+              Green University Student Bridge
+            </div>
+          </div>
+          <div class="h-fit w-full poppins-normal text-[10px] md:text-sm mt-2 pr-3">
+            Green University StudentBridge is a web platform designed to help
+            university students easily find essential services in one place.
+            It offers features like room rentals (To-let), buying & selling,
+            meal sharing, lost & found, and blood donation.
+          </div>
+          <!-- buttons -->
+          <div class="poppins-regular absolute bottom-3 flex gap-2">
+            <div class="animateImage button2 center"
+              onclick="window.open('https://github.com/Ahshan-Haquc/ToLetGreenUniversity', '_blank')">
+              <i class="fa-brands fa-github fa-2x"></i>
+            </div>
+            <div class="animateImage button2 center"
+              onclick="window.open('https://www.figma.com/design/C5zIkI0wqOYStZydom2d9w/ToLetGreenUniversity--Only-me-?node-id=0-1&p=f&t=qXLnXe55iOZ5QSNI-0', '_blank')">
+              <i class="fa-brands fa-figma fa-2x"></i>
+            </div>
+            <!-- <div
                 class="animateImage button2 center border border-gray-500 rounded-full"
                 onclick="window.open('https://github.com/Ahshan-Haquc', '_blank')"
               >
                 Live
               </div> -->
-            </div>
           </div>
         </div>
-        <!-- box -->
-        <div
-          class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0"
-          data-aos="slide-up"
-        >
-          <div class="h-full w-1/3 center rounded-tl-2xl rounded-bl-2xl">
-            <img
-              class="h-[120px] w-[120px] rounded-md"
-              src="projectTitleLogo.png"
-              alt=""
-            />
+      </div>
+      <!-- box -->
+      <div class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0" data-aos="slide-up">
+        <div class="h-full w-1/3 center rounded-tl-2xl rounded-bl-2xl">
+          <img class="h-[120px] w-[120px] rounded-md" src="projectTitleLogo.png" alt="" />
+        </div>
+        <div class="h-full w-2/3 relative py-3 p-r-3">
+          <div class="h-fit w-full flex justify-between">
+            <div class="poppins-bold text-2xl text-[#fb7500]">
+              1MinuteQuiz
+            </div>
           </div>
-          <div class="h-full w-2/3 relative py-3 p-r-3">
-            <div class="h-fit w-full flex justify-between">
-              <div class="poppins-bold text-2xl text-[#fb7500]">
-                1MinuteQuiz
-              </div>
+          <div class="h-fit w-full poppins-normal text-[10px] md:text-sm mt-2 pr-3">
+            An education based website where a person can check their
+            vocabulary knowledge and ability to solve mathematics quickly
+          </div>
+          <!-- buttons -->
+          <div class="poppins-regular absolute bottom-3 flex gap-2">
+            <div class="animateImage button2 center"
+              onclick="window.open('https://github.com/Ahshan-Haquc/ToLetGreenUniversity', '_blank')">
+              <i class="fa-brands fa-github fa-2x"></i>
             </div>
-            <div
-              class="h-fit w-full poppins-normal text-[10px] md:text-sm mt-2 pr-3"
-            >
-              An education based website where a person can check their
-              vocabulary knowledge and ability to solve mathematics quickly
+            <div class="animateImage button2 center"
+              onclick="window.open('https://www.figma.com/design/HAYQq7VztwoyYJP21St6zW/1MinuteQuiz?node-id=0-1&t=9Wyt5cuHz6xiFdQ2-1', '_blank')">
+              <i class="fa-brands fa-figma fa-2x"></i>
             </div>
-            <!-- buttons -->
-            <div class="poppins-regular absolute bottom-3 flex gap-2">
-              <div
-                class="animateImage button2 center"
-                onclick="window.open('https://github.com/Ahshan-Haquc/ToLetGreenUniversity', '_blank')"
-              >
-                <i class="fa-brands fa-github fa-2x"></i>
-              </div>
-              <div
-                class="animateImage button2 center"
-                onclick="window.open('https://www.figma.com/design/HAYQq7VztwoyYJP21St6zW/1MinuteQuiz?node-id=0-1&t=9Wyt5cuHz6xiFdQ2-1', '_blank')"
-              >
-                <i class="fa-brands fa-figma fa-2x"></i>
-              </div>
-              <!-- <div
+            <!-- <div
                 class="animateImage button2 center border border-gray-500 rounded-full"
                 onclick="window.open('https://github.com/Ahshan-Haquc', '_blank')"
               >
                 Live
               </div> -->
-            </div>
           </div>
         </div>
-
-        <!-- box -->
-        <div
-          class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0"
-          data-aos="slide-up"
-        >
-          <div class="h-full w-1/3 center rounded-tl-2xl rounded-bl-2xl">
-            <img
-              class="h-[120px] w-[120px] rounded-md"
-              src="projectTitleLogo.png"
-              alt=""
-            />
+      </div>
+      <!-- box -->
+      <div class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0" data-aos="slide-up">
+        <div class="h-full w-1/3 center rounded-tl-2xl rounded-bl-2xl">
+          <img class="h-[120px] w-[120px] rounded-md" src="projectTitleLogo.png" alt="" />
+        </div>
+        <div class="h-full w-2/3 relative py-3 p-r-3">
+          <div class="h-fit w-full flex justify-between">
+            <div class="poppins-bold text-2xl text-[#fb7500]">
+              ProFileGen - CV Maker
+            </div>
           </div>
-          <div class="h-full w-2/3 relative py-3 p-r-3">
-            <div class="h-fit w-full flex justify-between">
-              <div class="poppins-bold text-2xl text-[#fb7500]">
-                Personal Portfolio
-              </div>
+          <div class="h-fit w-full poppins-normal text-[10px] md:text-sm mt-2 pr-3">
+            A job candidate can build a resume or CV in a minute choosing
+            different and attractive templates and can update for lifetime.
+          </div>
+          <!-- buttons -->
+          <div class="poppins-regular absolute bottom-3 flex gap-2">
+            <div class="animateImage button2 center"
+              onclick="window.open('https://github.com/Ahshan-Haquc/ToLetGreenUniversity', '_blank')">
+              <i class="fa-brands fa-github fa-2x"></i>
             </div>
-            <div
-              class="h-fit w-full poppins-normal text-[10px] md:text-sm mt-2 pr-3"
-            >
-              This is my personal portfolio website where I showcase my skills,
-              projects, and experiences as a web developer. It includes my
-              background, tech stack, past work, and ways to contact me. Built
-              with HTML, CSS, JavaScript, and Tailwind CSS.
+            <div class="animateImage button2 center"
+              onclick="window.open('https://www.figma.com/design/HAYQq7VztwoyYJP21St6zW/1MinuteQuiz?node-id=0-1&t=9Wyt5cuHz6xiFdQ2-1', '_blank')">
+              <i class="fa-brands fa-figma fa-2x"></i>
             </div>
-            <!-- buttons -->
-            <div class="poppins-regular absolute bottom-3 flex gap-2">
-              <div
-                class="animateImage button2 center"
-                onclick="window.open('https://github.com/Ahshan-Haquc/MyPortfolio-Website', '_blank')"
-              >
-                <i class="fa-brands fa-github fa-2x"></i>
-              </div>
-              <div
-                class="animateImage button2 center"
-                onclick="window.open('https://www.figma.com/design/gKvcI4c9AU8CfeqwBZmH5m/My-portfilio?t=qXLnXe55iOZ5QSNI-0', '_blank')"
-              >
-                <i class="fa-brands fa-figma fa-2x"></i>
-              </div>
-              <div
+            <!-- <div
                 class="animateImage button2 center border border-gray-500 rounded-full"
-                onclick="window.open('https://ahshan-haquc.github.io/MyPortfolio-Website/', '_blank')"
+                onclick="window.open('https://github.com/Ahshan-Haquc', '_blank')"
               >
                 Live
-              </div>
+              </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- box -->
+      <div class="projectSmallBox flex items-center gap-6 mx-3 md:mx-0" data-aos="slide-up">
+        <div class="h-full w-1/3 center rounded-tl-2xl rounded-bl-2xl">
+          <img class="h-[120px] w-[120px] rounded-md" src="projectTitleLogo.png" alt="" />
+        </div>
+        <div class="h-full w-2/3 relative py-3 p-r-3">
+          <div class="h-fit w-full flex justify-between">
+            <div class="poppins-bold text-2xl text-[#fb7500]">
+              Personal Portfolio
+            </div>
+          </div>
+          <div class="h-fit w-full poppins-normal text-[10px] md:text-sm mt-2 pr-3">
+            This is my personal portfolio website where I showcase my skills,
+            projects, and experiences as a web developer. It includes my
+            background, tech stack, past work, and ways to contact me. Built
+            with HTML, CSS, JavaScript, and Tailwind CSS.
+          </div>
+          <!-- buttons -->
+          <div class="poppins-regular absolute bottom-3 flex gap-2">
+            <div class="animateImage button2 center"
+              onclick="window.open('https://github.com/Ahshan-Haquc/MyPortfolio-Website', '_blank')">
+              <i class="fa-brands fa-github fa-2x"></i>
+            </div>
+            <div class="animateImage button2 center"
+              onclick="window.open('https://www.figma.com/design/gKvcI4c9AU8CfeqwBZmH5m/My-portfilio?t=qXLnXe55iOZ5QSNI-0', '_blank')">
+              <i class="fa-brands fa-figma fa-2x"></i>
+            </div>
+            <div class="animateImage button2 center border border-gray-500 rounded-full"
+              onclick="window.open('https://ahshan-haquc.github.io/MyPortfolio-Website/', '_blank')">
+              Live
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Section 5: Skills  -->
-    <div
-      class="section max-h-fit min-h-screen w-screen flex justify-center items-center flex-col bg-gradient-to-r from-[#284065] to-[#213555] text-white"
-    >
-      <div
-        class="w-full h-fit center flex-col poppins-bold text-5xl mt-[15vh] mb-[60px]"
-      >
-        <div>My <span class="text-[#EDFF00]">Experties</span></div>
+  <!-- Section 5: Skills  -->
+  <div
+    class="section max-h-fit min-h-screen w-screen flex justify-center items-center flex-col bg-gradient-to-r from-[#284065] to-[#213555] text-white">
+    <div class="w-full h-fit center flex-col poppins-bold text-5xl mt-[15vh] mb-[60px]">
+      <div>My <span class="text-[#EDFF00]">Experties</span></div>
+    </div>
+    <div class="h-fit w-full center flex-col gap-5">
+      <!-- text  -->
+      <div class="w-full h-fit center hidden md:flex">
+        <div class="h-12 w-fit text-white poppins-normal border-t border-b border-white center">
+          Highly Interested In
+        </div>
       </div>
-      <div class="h-fit w-full center flex-col gap-5">
-        <!-- text  -->
-        <div class="w-full h-fit center hidden md:flex">
-          <div
-            class="h-12 w-fit text-white poppins-normal border-t border-b border-white center"
-          >
-            Highly Interested In
+      <!-- motion box -->
+      <div class="w-[100%] h-[300px] bg-[#112749] center gap-8 overflow-hidden hidden md:flex">
+        <!-- box -->
+        <div class="motionBox motionUpDown">
+          <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
+            <i class="fa-brands fa-html5 fa-3x"></i>
+          </div>
+          <div class="poppins-extrabold text-xl text-[#EDFF00]">HTML</div>
+        </div>
+        <!-- box -->
+        <div class="motionBox motionUpDown">
+          <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
+            <!-- fontawesome icon  -->
+            <i class="fa-brands fa-css3-alt fa-3x"></i>
+          </div>
+          <div class="poppins-extrabold text-xl text-[#EDFF00]">CSS</div>
+        </div>
+        <!-- box -->
+        <div class="motionBox motionUpDown">
+          <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
+            <!-- fontawesome icon  -->
+            <i class="fa-brands fa-node-js fa-3x"></i>
+          </div>
+          <div class="poppins-extrabold text-xl text-[#EDFF00]">
+            JavaScript
           </div>
         </div>
-        <!-- motion box -->
-        <div
-          class="w-[100%] h-[300px] bg-[#112749] center gap-8 overflow-hidden hidden md:flex"
-        >
-          <!-- box -->
-          <div class="motionBox motionUpDown">
-            <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
-              <i class="fa-brands fa-html5 fa-3x"></i>
-            </div>
-            <div class="poppins-extrabold text-xl text-[#EDFF00]">HTML</div>
+        <!-- box -->
+        <div class="motionBox motionUpDown">
+          <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
+            <!-- fontawesome icon  -->
+            <i class="fa-regular fa-file-code fa-3x"></i>
           </div>
-          <!-- box -->
-          <div class="motionBox motionUpDown">
-            <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
-              <!-- fontawesome icon  -->
-              <i class="fa-brands fa-css3-alt fa-3x"></i>
-            </div>
-            <div class="poppins-extrabold text-xl text-[#EDFF00]">CSS</div>
-          </div>
-          <!-- box -->
-          <div class="motionBox motionUpDown">
-            <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
-              <!-- fontawesome icon  -->
-              <i class="fa-brands fa-node-js fa-3x"></i>
-            </div>
-            <div class="poppins-extrabold text-xl text-[#EDFF00]">
-              JavaScript
-            </div>
-          </div>
-          <!-- box -->
-          <div class="motionBox motionUpDown">
-            <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
-              <!-- fontawesome icon  -->
-              <i class="fa-regular fa-file-code fa-3x"></i>
-            </div>
-            <div class="poppins-extrabold text-xl text-[#EDFF00]">
-              TailwindCss
-            </div>
-          </div>
-          <!-- box -->
-          <div class="motionBox motionUpDown">
-            <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
-              <!-- fontawesome icon  -->
-              <i class="fa-brands fa-react fa-3x"></i>
-            </div>
-            <div class="poppins-extrabold text-xl text-[#EDFF00]">React.js</div>
-          </div>
-          <!-- box -->
-          <div class="motionBox motionUpDown">
-            <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
-              <!-- fontawesome icon  -->
-              <i class="fa-brands fa-node fa-3x"></i>
-            </div>
-            <div class="poppins-extrabold text-xl text-[#EDFF00]">Node.js</div>
-          </div>
-          <!-- box -->
-          <div class="motionBox motionUpDown">
-            <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
-              <!-- fontawesome icon  -->
-              <i class="fa-solid fa-database fa-3x"></i>
-            </div>
-            <div class="poppins-extrabold text-xl text-[#EDFF00]">MongoDB</div>
-          </div>
-
-          <!-- box -->
-          <div class="motionBox motionUpDown">
-            <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
-              <!-- fontawesome icon  -->
-              <i class="fa-brands fa-figma fa-3x"></i>
-            </div>
-            <div class="poppins-extrabold text-xl text-[#EDFF00]">Figma</div>
+          <div class="poppins-extrabold text-xl text-[#EDFF00]">
+            TailwindCss
           </div>
         </div>
-        <!-- text 2 -->
-        <div class="w-full h-fit center">
-          <div
-            class="h-12 w-fit text-white poppins-normal border-t border-b border-white center"
-          >
-            My Tech Stack
+        <!-- box -->
+        <div class="motionBox motionUpDown">
+          <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
+            <!-- fontawesome icon  -->
+            <i class="fa-brands fa-react fa-3x"></i>
+          </div>
+          <div class="poppins-extrabold text-xl text-[#EDFF00]">React.js</div>
+        </div>
+        <!-- box -->
+        <div class="motionBox motionUpDown">
+          <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
+            <!-- fontawesome icon  -->
+            <i class="fa-brands fa-node fa-3x"></i>
+          </div>
+          <div class="poppins-extrabold text-xl text-[#EDFF00]">Node.js</div>
+        </div>
+        <!-- box -->
+        <div class="motionBox motionUpDown">
+          <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
+            <!-- fontawesome icon  -->
+            <i class="fa-solid fa-database fa-3x"></i>
+          </div>
+          <div class="poppins-extrabold text-xl text-[#EDFF00]">MongoDB</div>
+        </div>
+
+        <!-- box -->
+        <div class="motionBox motionUpDown">
+          <div class="center h-[80px] w-[80px] bg-[#21dd1e] rounded-full">
+            <!-- fontawesome icon  -->
+            <i class="fa-brands fa-figma fa-3x"></i>
+          </div>
+          <div class="poppins-extrabold text-xl text-[#EDFF00]">Figma</div>
+        </div>
+      </div>
+      <!-- text 2 -->
+      <div class="w-full h-fit center">
+        <div class="h-12 w-fit text-white poppins-normal border-t border-b border-white center">
+          My Tech Stack
+        </div>
+      </div>
+      <!-- below box area-->
+      <div class="w-full h-fit center flex-wrap gap-6">
+        <!-- boxes for skills -->
+        <div class="skillMainBox" data-aos="slide-up" onmouseover="skillPageHover('box1')"
+          onmouseleave="removeSkillPageHover('box1')">
+          <div class="h-[25%] poppins-black text-[#213555] text-4xl text-center center">
+            Programming Languages
+          </div>
+          <div class="skillSmallBox" id="box1">
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">C</div>
+            </div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">JavaScript</div>
+            </div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">Python</div>
+            </div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">Java</div>
+            </div>
           </div>
         </div>
-        <!-- below box area-->
-        <div class="w-full h-fit center flex-wrap gap-6">
-          <!-- boxes for skills -->
-          <div
-            class="skillMainBox"
-            data-aos="slide-up"
-            onmouseover="skillPageHover('box1')"
-            onmouseleave="removeSkillPageHover('box1')"
-          >
-            <div
-              class="h-[25%] poppins-black text-[#213555] text-4xl text-center center"
-            >
-              Programming Languages
+
+        <!-- boxes for frontend  -->
+        <div class="skillMainBox" data-aos="slide-up" onmouseover="skillPageHover('box2')"
+          onmouseleave="removeSkillPageHover('box2')">
+          <div class="h-[25%] poppins-black text-[#213555] text-4xl text-center center">
+            Frontend Development
+          </div>
+          <div class="skillSmallBox" id="box2">
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">HTML</div>
             </div>
-            <div class="skillSmallBox" id="box1">
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">C</div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
               </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">JavaScript</div>
+              <div class="center">CSS</div>
+            </div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
               </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">Python</div>
+              <div class="center">JavaScript</div>
+            </div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
               </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">Java</div>
+              <div class="center">TailwindCss</div>
+            </div>
+
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">
+                EJS<sup>
+                  <span class="text-[12px] text-gray-800 ml-1">(Template Engine)</span>
+                </sup>
+              </div>
+            </div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">React.js</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- boxes for skills  -->
+        <div class="skillMainBox" data-aos="slide-up" onmouseover="skillPageHover('box3')"
+          onmouseleave="removeSkillPageHover('box3')">
+          <div class="h-[25%] poppins-black text-[#213555] text-4xl text-center center">
+            Backend Development
+          </div>
+          <div class="skillSmallBox" id="box3">
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">Node.js</div>
+            </div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">Express.js</div>
+            </div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">RESTful APIs</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- boxes for skills  -->
+        <div class="skillMainBox" data-aos="slide-up" onmouseover="skillPageHover('box4')"
+          onmouseleave="removeSkillPageHover('box4')">
+          <div class="h-[25%] poppins-black text-[#213555] text-4xl text-center center">
+            Database Management
+          </div>
+          <div class="skillSmallBox" id="box4">
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">MongoDB</div>
+            </div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">MySQL</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- boxes for tools  -->
+        <div class="skillMainBox" data-aos="slide-up" onmouseover="skillPageHover('box5')"
+          onmouseleave="removeSkillPageHover('box5')">
+          <div class="h-[25%] poppins-black text-[#213555] text-4xl text-center center">
+            Tools & Platforms
+          </div>
+          <div class="skillSmallBox" id="box5">
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">Git & Github</div>
+            </div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">
+                Figma
+                <sup>
+                  <span class="text-[12px] text-gray-800 ml-1">(Prototype Designing)</span>
+                </sup>
+              </div>
+            </div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">VS code</div>
+            </div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">Chat GPT</div>
+            </div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">
+                Postman
+                <sup>
+                  <span class="text-[12px] text-gray-800 ml-1">(API testing)</span>
+                </sup>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- boxes for frontend  -->
-          <div
-            class="skillMainBox"
-            data-aos="slide-up"
-            onmouseover="skillPageHover('box2')"
-            onmouseleave="removeSkillPageHover('box2')"
-          >
-            <div
-              class="h-[25%] poppins-black text-[#213555] text-4xl text-center center"
-            >
-              Frontend Development
-            </div>
-            <div class="skillSmallBox" id="box2">
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">HTML</div>
-              </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">CSS</div>
-              </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">JavaScript</div>
-              </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">TailwindCss</div>
-              </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">Boostrap</div>
-              </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">
-                  EJS<sup>
-                    <span class="text-[12px] text-gray-800 ml-1"
-                      >(Template Engine)</span
-                    >
-                  </sup>
-                </div>
-              </div>
-            </div>
+        <!-- boxes for soft skills  -->
+        <div class="skillMainBox" data-aos="slide-up" onmouseover="skillPageHover('box6')"
+          onmouseleave="removeSkillPageHover('box6')">
+          <div class="h-[25%] poppins-black text-[#213555] text-4xl text-center center">
+            Soft Skills
           </div>
-
-          <!-- boxes for skills  -->
-          <div
-            class="skillMainBox"
-            data-aos="slide-up"
-            onmouseover="skillPageHover('box3')"
-            onmouseleave="removeSkillPageHover('box3')"
-          >
-            <div
-              class="h-[25%] poppins-black text-[#213555] text-4xl text-center center"
-            >
-              Backend Development
-            </div>
-            <div class="skillSmallBox" id="box3">
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">Node.js</div>
+          <div class="skillSmallBox" id="box6">
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
               </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">Express.js</div>
-              </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">RESTful APIs</div>
+              <div class="center">
+                Photo Editing
+                <sup>
+                  <span class="text-[12px] text-gray-800 ml-1">(Adobe Photoshop)</span>
+                </sup>
               </div>
             </div>
-          </div>
-
-          <!-- boxes for skills  -->
-          <div
-            class="skillMainBox"
-            data-aos="slide-up"
-            onmouseover="skillPageHover('box4')"
-            onmouseleave="removeSkillPageHover('box4')"
-          >
-            <div
-              class="h-[25%] poppins-black text-[#213555] text-4xl text-center center"
-            >
-              Database Management
-            </div>
-            <div class="skillSmallBox" id="box4">
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">MongoDB</div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
               </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">MySQL</div>
+              <div class="center">
+                Video Editing
+                <sup>
+                  <span class="text-[12px] text-gray-800 ml-1">(CapCut)</span>
+                </sup>
               </div>
             </div>
-          </div>
-
-          <!-- boxes for tools  -->
-          <div
-            class="skillMainBox"
-            data-aos="slide-up"
-            onmouseover="skillPageHover('box5')"
-            onmouseleave="removeSkillPageHover('box5')"
-          >
-            <div
-              class="h-[25%] poppins-black text-[#213555] text-4xl text-center center"
-            >
-              Tools & Platforms
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
+              </div>
+              <div class="center">Compititive Programming</div>
             </div>
-            <div class="skillSmallBox" id="box5">
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">Git & Github</div>
+            <!-- internel text  -->
+            <div class="flex items-center gap-5">
+              <div class="h-7 w-7 bg-green-600 rounded-full">
+                <img src="images/skillPageCheck.png" alt="" />
               </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">
-                  Figma
-                  <sup>
-                    <span class="text-[12px] text-gray-800 ml-1"
-                      >(Prototype Designing)</span
-                    >
-                  </sup>
-                </div>
-              </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">VS code</div>
-              </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">Chat GPT</div>
-              </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">
-                  Postman
-                  <sup>
-                    <span class="text-[12px] text-gray-800 ml-1"
-                      >(API testing)</span
-                    >
-                  </sup>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- boxes for soft skills  -->
-          <div
-            class="skillMainBox"
-            data-aos="slide-up"
-            onmouseover="skillPageHover('box6')"
-            onmouseleave="removeSkillPageHover('box6')"
-          >
-            <div
-              class="h-[25%] poppins-black text-[#213555] text-4xl text-center center"
-            >
-              Soft Skills
-            </div>
-            <div class="skillSmallBox" id="box6">
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">
-                  Photo Editing
-                  <sup>
-                    <span class="text-[12px] text-gray-800 ml-1"
-                      >(Adobe Photoshop)</span
-                    >
-                  </sup>
-                </div>
-              </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">
-                  Video Editing
-                  <sup>
-                    <span class="text-[12px] text-gray-800 ml-1">(CapCut)</span>
-                  </sup>
-                </div>
-              </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">Compititive Programming</div>
-              </div>
-              <!-- internel text  -->
-              <div class="flex items-center gap-5">
-                <div class="h-7 w-7 bg-green-600 rounded-full">
-                  <img src="images/skillPageCheck.png" alt="" />
-                </div>
-                <div class="center">MS Office</div>
-              </div>
+              <div class="center">MS Office</div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Section 5: Achievements -->
-    <div
-      class="section h-fit w-screen flex justify-center items-center flex-col bg-gradient-to-r from-[#284065] to-[#213555] text-white"
-    >
-      <div
-        class="w-full h-fit center flex-col poppins-bold text-xl md:text-5xl mt-[15vh] mb-[60px] bg-[#112749]"
-      >
-        <div>My <span class="text-[#EDFF00]">Awards</span> &</div>
-        <div><span class="text-[#EDFF00]">Activities</span> Journey</div>
-      </div>
-      <!-- first change  -->
-      <div class="h-[400px] w-full relative mb-12 hidden md:flex">
-        <!-- box -->
-        <div class="testBox center flex-col">
-          <div class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] center">
-            VC's Award
-          </div>
-          <div class="h-5/6 w-full overflow-hidden rounded-3xl">
-            <img
-              class="rounded-md object-cover"
-              src="images/VC award.jpg"
-              alt="VC Award"
-            />
-          </div>
+  <!-- Section 5: Achievements -->
+  <div
+    class="section h-fit w-screen flex justify-center items-center flex-col bg-gradient-to-r from-[#284065] to-[#213555] text-white">
+    <div class="w-full h-fit center flex-col poppins-bold text-xl md:text-5xl mt-[15vh] mb-[60px] bg-[#112749]">
+      <div>My <span class="text-[#EDFF00]">Awards</span> &</div>
+      <div><span class="text-[#EDFF00]">Activities</span> Journey</div>
+    </div>
+    <!-- first change  -->
+    <div class="h-[400px] w-full relative mb-12 hidden md:flex">
+      <!-- box -->
+      <div class="testBox center flex-col">
+        <div class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] center">
+          VC's Award
         </div>
-        <!-- box -->
-        <div class="testBox center flex-col">
-          <div class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] center">
-            IDPC - 2024
-          </div>
-          <div class="h-5/6 w-full overflow-hidden rounded-3xl">
-            <img
-              class="rounded-md object-cover"
-              src="images/IDPC.jpg"
-              alt="VC Award"
-            />
-          </div>
-        </div>
-        <!-- box -->
-        <div class="testBox center flex-col">
-          <div class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] center">
-            Ghuri Uthsob - 2023
-          </div>
-          <div class="h-5/6 w-full overflow-hidden rounded-3xl">
-            <img
-              class="rounded-md object-cover"
-              src="images/GruriUthsob.JPG"
-              alt="VC Award"
-            />
-          </div>
-        </div>
-        <!-- box -->
-        <div class="testBox center flex-col">
-          <div class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] center">
-            Tex Fest - 2024
-          </div>
-          <div class="h-5/6 w-full overflow-hidden rounded-3xl">
-            <img
-              class="rounded-md object-cover"
-              src="images/TexFestDanceImage.JPG"
-              alt="VC Award"
-            />
-          </div>
-        </div>
-        <!-- box -->
-        <div class="testBox center flex-col">
-          <div
-            class="h-1/6 w-full poppins-bold text-xl text-[#EDFF00] text-center"
-          >
-            Victory Day Programme - 2022
-          </div>
-          <div class="h-5/6 w-full overflow-hidden rounded-3xl">
-            <img
-              class="rounded-md object-cover"
-              src="images/FirstDance.JPG"
-              alt="VC Award"
-            />
-          </div>
+        <div class="h-5/6 w-full overflow-hidden rounded-3xl">
+          <img class="rounded-md object-cover" src="images/VC award.jpg" alt="VC Award" />
         </div>
       </div>
-
-      <div class="h-fit w-full center flex-wrap gap-1 md:gap-8 md:hidden">
-        <!-- new box -->
-        <div
-          class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden"
-        >
-          <div
-            class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
-          >
-            VC's Award
-          </div>
-          <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
-            <img
-              class="rounded-md object-cover"
-              src="images/VC award.jpg"
-              alt="VC Award"
-            />
-          </div>
+      <!-- box -->
+      <div class="testBox center flex-col">
+        <div class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] center">
+          IDPC - 2024
         </div>
-        <!-- new box -->
-        <div
-          class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden"
-        >
-          <div
-            class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
-          >
-            IDPC - 2024
-          </div>
-          <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
-            <img
-              class="rounded-md object-cover"
-              src="images/IDPC.jpg"
-              alt="VC Award"
-            />
-          </div>
+        <div class="h-5/6 w-full overflow-hidden rounded-3xl">
+          <img class="rounded-md object-cover" src="images/IDPC.jpg" alt="VC Award" />
         </div>
-        <!-- new box -->
-        <div
-          class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden"
-        >
-          <div
-            class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
-          >
-            Ghuri Uthsob
-          </div>
-          <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
-            <img
-              class="rounded-md object-cover"
-              src="images/GruriUthsob.JPG"
-              alt="VC Award"
-            />
-          </div>
+      </div>
+      <!-- box -->
+      <div class="testBox center flex-col">
+        <div class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] center">
+          Ghuri Uthsob - 2023
         </div>
-        <!-- new box -->
-        <div
-          class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden"
-        >
-          <div
-            class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
-          >
-            Tex Fest
-          </div>
-          <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
-            <img
-              class="rounded-md object-cover"
-              src="images/TexFestDanceImage.JPG"
-              alt="VC Award"
-            />
-          </div>
+        <div class="h-5/6 w-full overflow-hidden rounded-3xl">
+          <img class="rounded-md object-cover" src="images/GruriUthsob.JPG" alt="VC Award" />
         </div>
-        <!-- new box -->
-        <div
-          class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden"
-        >
-          <div
-            class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center"
-          >
-            Victory Day Programme
-          </div>
-          <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
-            <img
-              class="rounded-md object-cover"
-              src="images/FirstDance.JPG"
-              alt="VC Award"
-            />
-          </div>
+      </div>
+      <!-- box -->
+      <div class="testBox center flex-col">
+        <div class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] center">
+          Tex Fest - 2024
+        </div>
+        <div class="h-5/6 w-full overflow-hidden rounded-3xl">
+          <img class="rounded-md object-cover" src="images/TexFestDanceImage.JPG" alt="VC Award" />
+        </div>
+      </div>
+      <!-- box -->
+      <div class="testBox center flex-col">
+        <div class="h-1/6 w-full poppins-bold text-xl text-[#EDFF00] text-center">
+          Victory Day Programme - 2022
+        </div>
+        <div class="h-5/6 w-full overflow-hidden rounded-3xl">
+          <img class="rounded-md object-cover" src="images/FirstDance.JPG" alt="VC Award" />
         </div>
       </div>
     </div>
-    <!-- Section 6: Contact -->
-    <div
-      class="section h-fit w-screen pt-[80px] md:pt-[10vh] flex justify-center items-center bg-gradient-to-r from-[#284065] to-[#213555] text-white flex-col md:flex-row"
-    >
-      <!-- left side part -->
+
+    <div class="h-fit w-full center flex-wrap gap-1 md:gap-8 md:hidden">
+      <!-- new box -->
       <div
-        class="w-full h-1/2 md:w-1/2 md:h-full flex flex-col justify-center items-center gap-5 p-6 md:pr-[60px]"
-      >
-        <div class="h-fit w-full poppins-regular text-xl">
-          <span>-</span>Contact With Me
+        class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden">
+        <div class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center">
+          VC's Award
         </div>
-        <div class="h-fit w-full text-5xl">
-          <span class="poppins-bold text-[#EDFF00]">Let's Talk</span>
-        </div>
-        <div class="h-fit w-full poppins-thin text-sm">
-          Feel free to reach out! Whether you have a project idea, a
-          collaboration opportunity, or just want to chat about web development
-          and technology, I’d love to connect. Let’s turn ideas into reality and
-          build something amazing together!
-        </div>
-        <div
-          class="h-9 w-full poppins-regular text-md md:text-xl flex items-center"
-        >
-          <img class="h-9 w-9 mr-4" src="images/contact.png" alt="" />
-          +642562
-        </div>
-        <div
-          class="h-9 w-full poppins-regular text-md md:text-xl flex items-center"
-        >
-          <img class="h-9 w-9 mr-4" src="images/contact.png" alt="" />
-          ahshanulhaqucgub@gmail.com
-        </div>
-        <div
-          class="h-9 w-full poppins-regular text-md md:text-xl flex items-center"
-        >
-          <img class="h-9 w-9 mr-4" src="images/contact.png" alt="" />
-          213002122@student.green.edu.bd
+        <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
+          <img class="rounded-md object-cover" src="images/VC award.jpg" alt="VC Award" />
         </div>
       </div>
-      <!-- left side part -->
-      <!-- Contact Form -->
-      <form
-        id="contactForm"
-        class="w-full h-1/2 md:w-1/2 md:h-full center flex-col p-6 md:p-12"
-        onsubmit="sendEmail(event)"
-      >
-        <div class="w-full h-fit flex gap-2">
-          <div class="w-1/2">
-            <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
-              Your name
-            </div>
-            <input
-              type="text"
-              id="userName"
-              class="w-full h-10 border rounded-lg bg-none p-2 text-black"
-            />
-          </div>
-          <div class="w-1/2">
-            <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
-              Your email address
-            </div>
-            <input
-              type="email"
-              id="userEmail"
-              class="w-full h-10 border rounded-lg bg-none p-2 text-black"
-            />
-          </div>
+      <!-- new box -->
+      <div
+        class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden">
+        <div class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center">
+          IDPC - 2024
         </div>
-
-        <div class="w-full h-fit">
+        <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
+          <img class="rounded-md object-cover" src="images/IDPC.jpg" alt="VC Award" />
+        </div>
+      </div>
+      <!-- new box -->
+      <div
+        class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden">
+        <div class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center">
+          Ghuri Uthsob
+        </div>
+        <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
+          <img class="rounded-md object-cover" src="images/GruriUthsob.JPG" alt="VC Award" />
+        </div>
+      </div>
+      <!-- new box -->
+      <div
+        class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden">
+        <div class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center">
+          Tex Fest
+        </div>
+        <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
+          <img class="rounded-md object-cover" src="images/TexFestDanceImage.JPG" alt="VC Award" />
+        </div>
+      </div>
+      <!-- new box -->
+      <div
+        class="acheivementSmallBox w-full h-[300px] md:w-[500px] md:h-[415px] center flex-col m-3 p-3 bg-[#112749] overflow-hidden">
+        <div class="h-1/6 w-full poppins-bold text-2xl text-[#EDFF00] z-20 flex items-center">
+          Victory Day Programme
+        </div>
+        <div class="h-5/6 w-full overflow-hidden rounded-3xl z-20">
+          <img class="rounded-md object-cover" src="images/FirstDance.JPG" alt="VC Award" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section 6: Contact -->
+  <div
+    class="section h-fit w-screen pt-[80px] md:pt-[10vh] flex justify-center items-center bg-gradient-to-r from-[#284065] to-[#213555] text-white flex-col md:flex-row">
+    <!-- left side part -->
+    <div class="w-full h-1/2 md:w-1/2 md:h-full flex flex-col justify-center items-center gap-5 p-6 md:pr-[60px]">
+      <div class="h-fit w-full poppins-regular text-xl">
+        <span>-</span>Contact With Me
+      </div>
+      <div class="h-fit w-full text-5xl">
+        <span class="poppins-bold text-[#EDFF00]">Let's Talk</span>
+      </div>
+      <div class="h-fit w-full poppins-thin text-sm">
+        Feel free to reach out! Whether you have a project idea, a
+        collaboration opportunity, or just want to chat about web development
+        and technology, I’d love to connect. Let’s turn ideas into reality and
+        build something amazing together!
+      </div>
+      <div class="h-9 w-full poppins-regular text-md md:text-xl flex items-center">
+        <img class="h-9 w-9 mr-4" src="images/contact.png" alt="" />
+        +642562
+      </div>
+      <div class="h-9 w-full poppins-regular text-md md:text-xl flex items-center">
+        <img class="h-9 w-9 mr-4" src="images/contact.png" alt="" />
+        ahshanulhaqucgub@gmail.com
+      </div>
+      <div class="h-9 w-full poppins-regular text-md md:text-xl flex items-center">
+        <img class="h-9 w-9 mr-4" src="images/contact.png" alt="" />
+        213002122@student.green.edu.bd
+      </div>
+    </div>
+    <!-- left side part -->
+    <!-- Contact Form -->
+    <form id="contactForm" class="w-full h-1/2 md:w-1/2 md:h-full center flex-col p-6 md:p-12"
+      onsubmit="sendEmail(event)">
+      <div class="w-full h-fit flex gap-2">
+        <div class="w-1/2">
           <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
-            Subject
+            Your name
           </div>
-          <input
-            type="text"
-            id="subject"
-            class="w-full h-10 border rounded-lg bg-none p-2 text-black"
-          />
+          <input type="text" id="userName" class="w-full h-10 border rounded-lg bg-none p-2 text-black" />
         </div>
-
-        <div class="w-full h-fit">
+        <div class="w-1/2">
           <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
-            Message
+            Your email address
           </div>
-          <textarea
-            id="message"
-            class="w-full h-[150px] border rounded-lg bg-none p-2 text-black"
-          ></textarea>
+          <input type="email" id="userEmail" class="w-full h-10 border rounded-lg bg-none p-2 text-black" />
         </div>
+      </div>
 
-        <div class="w-full h-fit">
-          <input
-            type="submit"
-            value="Send"
-            class="w-1/4 h-[40px] my-4 rounded-lg duration-300 bg-[#EDFF00] hover:bg-[#d3df2b] text-black poppins-regular text-md cursor-pointer"
-          />
+      <div class="w-full h-fit">
+        <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
+          Subject
         </div>
-      </form>
-    </div>
+        <input type="text" id="subject" class="w-full h-10 border rounded-lg bg-none p-2 text-black" />
+      </div>
 
-    <!-- this is for showing spin and succesfull popup while email sending  -->
-    <!-- Loading Spinner -->
-    <div
-      id="loadingSpinner"
-      class="fixed top-0 left-0 w-full h-full bg-[#00000090] flex justify-center items-center hidden z-50"
-    >
-      <div
-        class="h-16 w-16 border-4 border-white border-t-transparent rounded-full animate-spin"
-      ></div>
-    </div>
+      <div class="w-full h-fit">
+        <div class="my-1 poppins-light text-[10px] text-md md:text-lg">
+          Message
+        </div>
+        <textarea id="message" class="w-full h-[150px] border rounded-lg bg-none p-2 text-black"></textarea>
+      </div>
 
-    <!-- Success Popup -->
-    <div
-      id="successPopup"
-      class="fixed top-5 right-[48%] bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg hidden z-50"
-    >
-      Email sent successfully! ✅
-    </div>
+      <div class="w-full h-fit">
+        <input type="submit" value="Send"
+          class="w-1/4 h-[40px] my-4 rounded-lg duration-300 bg-[#EDFF00] hover:bg-[#d3df2b] text-black poppins-regular text-md cursor-pointer" />
+      </div>
+    </form>
+  </div>
 
-    <!-- js file  -->
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- this is for showing spin and succesfull popup while email sending  -->
+  <!-- Loading Spinner -->
+  <div id="loadingSpinner"
+    class="fixed top-0 left-0 w-full h-full bg-[#00000090] flex justify-center items-center hidden z-50">
+    <div class="h-16 w-16 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+  </div>
 
-    <script>
-      (function () {
-        emailjs.init("-FrRWpdOLQUbeS97K"); // your public key
-      })();
+  <!-- Success Popup -->
+  <div id="successPopup"
+    class="fixed top-5 right-[48%] bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg hidden z-50">
+    Email sent successfully! ✅
+  </div>
 
-      function sendEmail(event) {
-        event.preventDefault();
+  <!-- js file  -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-        const name = document.getElementById("userName").value;
-        const email = document.getElementById("userEmail").value;
-        const subject = document.getElementById("subject").value;
-        const message = document.getElementById("message").value;
+  <script>
+    (function () {
+      emailjs.init("-FrRWpdOLQUbeS97K"); // your public key
+    })();
 
-        if (!name || !email || !subject || !message) {
-          alert("Please fill in all fields!");
-          return;
-        }
+    function sendEmail(event) {
+      event.preventDefault();
 
-        const params = {
-          name: name,
-          email: email,
-          title: subject,
-          message: message,
-          time: new Date().toLocaleString(),
-        };
+      const name = document.getElementById("userName").value;
+      const email = document.getElementById("userEmail").value;
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value;
 
-        // Show loading spinner
-        document.getElementById("loadingSpinner").classList.remove("hidden");
-
-        emailjs.send("service_sdng3qe", "template_j3of4h8", params).then(
-          function (res) {
-            // Hide spinner
-            document.getElementById("loadingSpinner").classList.add("hidden");
-
-            // Show success popup
-            const popup = document.getElementById("successPopup");
-            popup.classList.remove("hidden");
-
-            // Auto-hide popup after 3 seconds
-            setTimeout(() => {
-              popup.classList.add("hidden");
-            }, 3000);
-
-            // Reset form
-            document.getElementById("contactForm").reset();
-          },
-          function (err) {
-            document.getElementById("loadingSpinner").classList.add("hidden");
-            console.error("Error sending email:", err);
-            alert("Something went wrong. Please try again later.");
-          }
-        );
+      if (!name || !email || !subject || !message) {
+        alert("Please fill in all fields!");
+        return;
       }
-    </script>
 
-    <!-- For Scroll Animation -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 250,
-        duration: 900,
-      });
-    </script>
-  </body>
-  <footer class="bg-gray-900 text-white py-6">
-    <div
-      class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4"
-    >
-      <div class="text-center md:text-left">
-        <h2 class="text-xl font-semibold">Ahshanul Haque</h2>
-        <p class="text-gray-400 text-sm">
-          Web Developer | Passionate about coding
-        </p>
-      </div>
+      const params = {
+        name: name,
+        email: email,
+        title: subject,
+        message: message,
+        time: new Date().toLocaleString(),
+      };
 
-      <div class="center flex-col mt-4 md:mt-0 text-[11px] md:text-[15px]">
-        <div class="text-gray-500">Quick access</div>
-        <div class="center gap-3 md:gap-5 mt-2 md:mt-0">
-          <a href="index.html" class="hover:text-blue-400">Home</a>
-          <a href="about.html" class="hover:text-blue-400">About</a>
-          <a href="career.html" class="hover:text-blue-400">Career</a>
-          <a href="projects.html" class="hover:text-blue-400">Projects</a>
-          <a href="skills.html" class="hover:text-blue-400">Skills</a>
-          <a href="acheivement.html" class="hover:text-blue-400">Acheivement</a>
-          <a href="contact.html" class="hover:text-blue-400">Contact</a>
-        </div>
-      </div>
+      // Show loading spinner
+      document.getElementById("loadingSpinner").classList.remove("hidden");
 
-      <div class="mt-4 md:mt-0">
-        <p class="text-gray-400 text-sm">
-          © 2025 Ahshanul Haque. All Rights Reserved.
-        </p>
+      emailjs.send("service_sdng3qe", "template_j3of4h8", params).then(
+        function (res) {
+          // Hide spinner
+          document.getElementById("loadingSpinner").classList.add("hidden");
+
+          // Show success popup
+          const popup = document.getElementById("successPopup");
+          popup.classList.remove("hidden");
+
+          // Auto-hide popup after 3 seconds
+          setTimeout(() => {
+            popup.classList.add("hidden");
+          }, 3000);
+
+          // Reset form
+          document.getElementById("contactForm").reset();
+        },
+        function (err) {
+          document.getElementById("loadingSpinner").classList.add("hidden");
+          console.error("Error sending email:", err);
+          alert("Something went wrong. Please try again later.");
+        }
+      );
+    }
+  </script>
+
+  <!-- For Scroll Animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 250,
+      duration: 900,
+    });
+  </script>
+</body>
+<footer class="bg-gray-900 text-white py-6">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+    <div class="text-center md:text-left">
+      <h2 class="text-xl font-semibold">Ahshanul Haque</h2>
+      <p class="text-gray-400 text-sm">
+        Web Developer | Passionate about coding
+      </p>
+    </div>
+
+    <div class="center flex-col mt-4 md:mt-0 text-[11px] md:text-[15px]">
+      <div class="text-gray-500">Quick access</div>
+      <div class="center gap-3 md:gap-5 mt-2 md:mt-0">
+        <a href="index.html" class="hover:text-blue-400">Home</a>
+        <a href="about.html" class="hover:text-blue-400">About</a>
+        <a href="career.html" class="hover:text-blue-400">Career</a>
+        <a href="projects.html" class="hover:text-blue-400">Projects</a>
+        <a href="skills.html" class="hover:text-blue-400">Skills</a>
+        <a href="acheivement.html" class="hover:text-blue-400">Acheivement</a>
+        <a href="contact.html" class="hover:text-blue-400">Contact</a>
       </div>
     </div>
-  </footer>
+
+    <div class="mt-4 md:mt-0">
+      <p class="text-gray-400 text-sm">
+        © 2025 Ahshanul Haque. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
 </html>

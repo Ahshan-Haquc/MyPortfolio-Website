@@ -1,283 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My acheivement</title>
-    <link rel="icon" type="image/png" href="Title Pic.png" />
-    <link href="./output.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- google font  -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-  </head>
-  <body
-    class="overflow-y-scroll overflow-x-hidden h-screen w-screen bg-gradient-to-r from-[#284065] to-[#213555]"
-  >
-    <!-- nav bar -->
-    <div class="h-[60px] w-full center fixed z-50">
-      <div class="h-full w-[95%] bg-[#112749] rounded-[40px] flex mr-2 md:mr-0">
-        <div class="h-full w-3/4 md:w-1/4 flex">
-          <div class="h-full w-[60px] overflow-hidden center ml-1">
-            <img
-              class="h-[40px] w-[40px] rounded-[10px]"
-              src="MyImage.jpg"
-              alt=""
-            />
-          </div>
-          <div
-            class="h-full w-fit center ml-3 text-white text-lg md:text-2xl poppins-extralight"
-          >
-            Ahshanul Haquc
-          </div>
-        </div>
-        <!-- right side nav  -->
-        <!-- for phone -->
-        <div
-          class="h-full text-[#F5EFE7] w-1/4 flex justify-end items-center poppins-thin flex md:hidden"
-        >
-          <i
-            class="fa-solid fa-circle-chevron-down fa-2x mr-3 rotate-[270deg]"
-            id="menuIcon"
-            onclick="toggleMenu()"
-          ></i>
-        </div>
-        <!-- for desktop -->
-        <div
-          class="h-full text-[#F5EFE7] w-3/4 mr-[6px] flex justify-end items-center poppins-thin hidden md:flex"
-        >
-          <div
-            class="index h-full w-fit px-6 center duration-500 hover:cursor-pointer hover:text-green-400"
-            onclick="window.location.href='index.html'"
-          >
-            Home
-          </div>
-          <div
-            class="h-full w-fit px-6 center About duration-500 hover:cursor-pointer hover:text-green-400"
-            onclick="window.location.href='about.html'"
-          >
-            About
-          </div>
-          <div
-            class="h-full w-fit px-6 center Career duration-500 hover:cursor-pointer hover:text-green-400"
-            onclick="window.location.href='career.html'"
-          >
-            Career
-          </div>
-          <div
-            class="h-full w-fit px-6 center Projects duration-500 hover:cursor-pointer hover:text-green-400"
-            onclick="window.location.href='projects.html'"
-          >
-            Projects
-          </div>
-          <div
-            class="h-full w-fit px-6 center Skills duration-500 hover:cursor-pointer hover:text-green-400"
-            onclick="window.location.href='skills.html'"
-          >
-            Skills
-          </div>
-          <div
-            class="h-full w-fit px-6 center Acheivements duration-500 hover:cursor-pointer hover:text-green-400"
-            onclick="window.location.href='acheivement.html'"
-          >
-            Acheivements
-          </div>
-          <div
-            class="buttons poppins-thin"
-            onclick="window.location.href='contact.html'"
-          >
-            Contact me
-          </div>
-          <!-- etate education dewa jete pare -->
-        </div>
-      </div>
-    </div>
-    <!-- showing popup while clicking menu in phone  -->
-    <div
-      class="h-screen w-screen bg-[#213555] text-white pt-[80px] fixed top-0 left-[-400px] z-40 flex flex-col justify-start items-center poppins-regular text-xl duration-500 md:hidden"
-      id="menuDiv"
-    >
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='index.html'"
-      >
-        Home
-      </div>
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='about.html'"
-      >
-        About
-      </div>
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='career.html'"
-      >
-        Career
-      </div>
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='projects.html'"
-      >
-        Projects
-      </div>
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='skills.html'"
-      >
-        Skills
-      </div>
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='acheivement.html'"
-      >
-        Acheivements
-      </div>
-      <div
-        class="h-10 w-full center linkHover my-3"
-        onclick="window.location.href='contact.html'"
-      >
-        Contact me
-      </div>
-    </div>
-    <!-- ----------------end--------- -->
-    <!--About Section -->
-    <div
-      class="section min-h-screen max-h-fit w-screen pt-[80px] md:pt[5vh] flex flex-col md:flex-row bg-gradient-to-r from-[#284065] to-[#213555] text-white"
-    >
-      <!-- left side part -->
-      <div class="w-full h-1/2 md:w-1/2 md:h-full center">
-        <img class="h-[300px] md:h-[500px]" src="aboutPagePic.png" alt="" />
-      </div>
-      <!-- right side part -->
-      <div
-        class="w-full h-1/2 p-3 md:w-1/2 md:h-full flex flex-col justify-center items-center gap-1 md:gap-5 md:pr-[60px]"
-      >
-        <div class="h-fit w-full poppins-regular text-sm md:text-xl">
-          <span>-</span>About me
-        </div>
-        <div class="h-fit w-full text-xl md:text-5xl">
-          <span class="poppins-bold">Who is</span>&nbsp;<span
-            class="poppins-regular text-[#EDFF00]"
-            >Ahshanul Haquc ?</span
-          >
-        </div>
-        <div
-          class="h-fit w-full poppins-thin text-sm text-gray-300 md:text-white"
-        >
-          I'm Ahshanul Haquc, a creative and detail-oriented Full-Stack Web
-          Developer with a passion for building sleek, responsive, and
-          user-friendly websites. Whether it's crafting interactive front-end
-          designs or developing robust back-end solutions, I love turning
-          complex problems into simple, elegant code. With expertise in
-          JavaScript, Node.js, and MongoDB, I thrive on bringing innovative
-          ideas to life and creating seamless digital experiences.
-        </div>
-        <div class="h-fit w-full mt-5 md:mt-0 flex gap-1 md:gap-3">
-          <div class="box">
-            <div class="poppins-black text-4xl">4+</div>
-            <div class="poppins-regular text-[8px] md:text-[16px]">
-              Project Completed
-            </div>
-          </div>
-          <div class="box">
-            <div class="poppins-black text-4xl">0+</div>
-            <div class="poppins-regular text-[8px] md:text-[16px]">
-              Industry Covered
-            </div>
-          </div>
-          <div class="box">
-            <div class="poppins-black text-4xl">0+</div>
-            <div class="poppins-regular text-[8px] md:text-[16px]">
-              Years of Experience
-            </div>
-          </div>
-        </div>
-        <div class="h-fit w-full mt-5 md:mt-[5.5rem] flex gap-2">
-          <div
-            class="buttons w-[150px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
-            onclick="showAboutPagePopup('My Journey')"
-          >
-            My Journey
-          </div>
-          <div
-            class="buttons w-[150px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
-            onclick="showAboutPagePopup('My Interests')"
-          >
-            My Interests
-          </div>
-          <div
-            class="buttons w-[200px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
-            onclick="showAboutPagePopup('Why contact me')"
-          >
-            Why contact me ?
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- this div for showing popup while clicking about page buttons -->
-    <div
-      class="fixed top-0 left-0 h-screen w-screen center bg-[#00000071] z-10 hidden"
-      id="aboutPagePopupBox"
-    >
-      <div
-        id="insideTextDiv"
-        class="relative h-[400px] w-[700px] p-5 rounded-xl bg-yellow-500 border border-green-500 text-white shadow-lg opacity-0 scale-75 pointer-events-none transition duration-200 ease-out"
-      >
-        <div
-          class="absolute top-1 right-1 h-12 w-12 p-2 rounded-full center duration-300 hover:bg-white hover:text-red-500 cursor-pointer"
-          id="aboutPopupHide"
-          onclick="hideAboutPagePopup()"
-        >
-          <i class="fa-solid fa-xmark fa-xl hover:scale-115"></i>
-        </div>
-        <div
-          class="pt-10 h-full poppins-thin text-lg text-black text-center center"
-          id="aboutPopupText"
-        >
-          <!-- Text will appear here dynamically -->
-        </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
-  <footer class="bg-gray-900 text-white py-6">
-    <div
-      class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4"
-    >
-      <div class="text-center md:text-left">
-        <h2 class="text-xl font-semibold">Ahshanul Haque</h2>
-        <p class="text-gray-400 text-sm">
-          Web Developer | Passionate about coding
-        </p>
-      </div>
 
-      <div class="center flex-col mt-4 md:mt-0 text-[11px] md:text-[15px]">
-        <div class="text-gray-500">Quick access</div>
-        <div class="center gap-3 md:gap-5 mt-2 md:mt-0">
-          <a href="index.html" class="hover:text-blue-400">Home</a>
-          <a href="about.html" class="hover:text-blue-400">About</a>
-          <a href="career.html" class="hover:text-blue-400">Career</a>
-          <a href="projects.html" class="hover:text-blue-400">Projects</a>
-          <a href="skills.html" class="hover:text-blue-400">Skills</a>
-          <a href="acheivement.html" class="hover:text-blue-400">Acheivement</a>
-          <a href="contact.html" class="hover:text-blue-400">Contact</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My acheivement</title>
+  <link rel="icon" type="image/png" href="Title Pic.png" />
+  <link href="./output.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- google font  -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body class="overflow-y-scroll overflow-x-hidden h-screen w-screen bg-gradient-to-r from-[#284065] to-[#213555]">
+  <!-- nav bar -->
+  <div class="h-[60px] w-full center fixed z-50">
+    <div class="h-full w-[95%] bg-[#112749] rounded-[40px] flex mr-2 md:mr-0">
+      <div class="h-full w-3/4 md:w-1/4 flex">
+        <div class="h-full w-[60px] overflow-hidden center ml-1">
+          <img class="h-[40px] w-[40px] rounded-[10px]" src="MyImage.jpg" alt="" />
+        </div>
+        <div class="h-full w-fit center ml-3 text-white text-lg md:text-2xl poppins-extralight">
+          Ahshanul Haquc
         </div>
       </div>
-
-      <div class="mt-4 md:mt-0">
-        <p class="text-gray-400 text-sm">
-          © 2025 Ahshanul Haque. All Rights Reserved.
-        </p>
+      <!-- right side nav  -->
+      <!-- for phone -->
+      <div class="h-full text-[#F5EFE7] w-1/4 flex justify-end items-center poppins-thin flex md:hidden">
+        <i class="fa-solid fa-circle-chevron-down fa-2x mr-3 rotate-[270deg]" id="menuIcon" onclick="toggleMenu()"></i>
+      </div>
+      <!-- for desktop -->
+      <div class="h-full text-[#F5EFE7] w-3/4 mr-[6px] flex justify-end items-center poppins-thin hidden md:flex">
+        <div class="index h-full w-fit px-6 center duration-500 hover:cursor-pointer hover:text-green-400"
+          onclick="window.location.href='index.html'">
+          Home
+        </div>
+        <div class="h-full w-fit px-6 center About duration-500 hover:cursor-pointer hover:text-green-400"
+          onclick="window.location.href='about.html'">
+          About
+        </div>
+        <div class="h-full w-fit px-6 center Career duration-500 hover:cursor-pointer hover:text-green-400"
+          onclick="window.location.href='career.html'">
+          Career
+        </div>
+        <div class="h-full w-fit px-6 center Projects duration-500 hover:cursor-pointer hover:text-green-400"
+          onclick="window.location.href='projects.html'">
+          Projects
+        </div>
+        <div class="h-full w-fit px-6 center Skills duration-500 hover:cursor-pointer hover:text-green-400"
+          onclick="window.location.href='skills.html'">
+          Skills
+        </div>
+        <div class="h-full w-fit px-6 center Acheivements duration-500 hover:cursor-pointer hover:text-green-400"
+          onclick="window.location.href='acheivement.html'">
+          Acheivements
+        </div>
+        <div class="buttons poppins-thin" onclick="window.location.href='contact.html'">
+          Contact me
+        </div>
+        <!-- etate education dewa jete pare -->
       </div>
     </div>
-  </footer>
+  </div>
+  <!-- showing popup while clicking menu in phone  -->
+  <div
+    class="h-screen w-screen bg-[#213555] text-white pt-[80px] fixed top-0 left-[-400px] z-40 flex flex-col justify-start items-center poppins-regular text-xl duration-500 md:hidden"
+    id="menuDiv">
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='index.html'">
+      Home
+    </div>
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='about.html'">
+      About
+    </div>
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='career.html'">
+      Career
+    </div>
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='projects.html'">
+      Projects
+    </div>
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='skills.html'">
+      Skills
+    </div>
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='acheivement.html'">
+      Acheivements
+    </div>
+    <div class="h-10 w-full center linkHover my-3" onclick="window.location.href='contact.html'">
+      Contact me
+    </div>
+  </div>
+  <!-- ----------------end--------- -->
+  <!--About Section -->
+  <div
+    class="section min-h-screen max-h-fit w-screen pt-[80px] md:pt[5vh] flex flex-col md:flex-row bg-gradient-to-r from-[#284065] to-[#213555] text-white">
+    <!-- left side part -->
+    <div class="w-full h-1/2 md:w-1/2 md:h-full center">
+      <img class="h-[300px] md:h-[500px]" src="aboutPagePic.png" alt="" />
+    </div>
+    <!-- right side part -->
+    <div
+      class="w-full h-1/2 p-3 md:w-1/2 md:h-full flex flex-col justify-center items-center gap-1 md:gap-5 md:pr-[60px]">
+      <div class="h-fit w-full poppins-regular text-sm md:text-xl">
+        <span>-</span>About me
+      </div>
+      <div class="h-fit w-full text-xl md:text-5xl">
+        <span class="poppins-bold">Who is</span>&nbsp;<span class="poppins-regular text-[#EDFF00]">Ahshanul Haquc
+          ?</span>
+      </div>
+      <div class="h-fit w-full poppins-thin text-sm text-gray-300 md:text-white">
+        I'm Ahshanul Haquc, a creative and detail-oriented Full-Stack Web
+        Developer with a passion for building sleek, responsive, and
+        user-friendly websites. Whether it's crafting interactive front-end
+        designs or developing robust back-end solutions, I love turning
+        complex problems into simple, elegant code. With expertise in
+        JavaScript, Node.js, and MongoDB, I thrive on bringing innovative
+        ideas to life and creating seamless digital experiences.
+      </div>
+      <div class="h-fit w-full mt-5 md:mt-0 flex gap-1 md:gap-3">
+        <div class="box">
+          <div class="poppins-black text-4xl">4+</div>
+          <div class="poppins-regular text-[8px] md:text-[16px]">
+            Project Completed
+          </div>
+        </div>
+        <div class="box">
+          <div class="poppins-black text-4xl">2</div>
+          <div class="poppins-regular text-[8px] md:text-[16px]">
+            Industry Covered
+          </div>
+        </div>
+        <div class="box">
+          <div class="poppins-black text-4xl">3+</div>
+          <div class="poppins-regular text-[8px] md:text-[16px]">
+            Months of Experience
+          </div>
+        </div>
+      </div>
+      <div class="h-fit w-full mt-5 md:mt-[5.5rem] flex gap-2">
+        <div
+          class="buttons w-[150px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
+          onclick="showAboutPagePopup('My Journey')">
+          My Journey
+        </div>
+        <div
+          class="buttons w-[150px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
+          onclick="showAboutPagePopup('My Interests')">
+          My Interests
+        </div>
+        <div
+          class="buttons w-[200px] md:w-fit text-[10px] md:text-[16px] bg-[#00A300] text-white poppins-normal hoverScale"
+          onclick="showAboutPagePopup('Why contact me')">
+          Why contact me ?
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- this div for showing popup while clicking about page buttons -->
+  <div class="fixed top-0 left-0 h-screen w-screen center bg-[#00000071] z-10 hidden" id="aboutPagePopupBox">
+    <div id="insideTextDiv"
+      class="relative h-[400px] w-[700px] p-5 rounded-xl bg-yellow-500 border border-green-500 text-white shadow-lg opacity-0 scale-75 pointer-events-none transition duration-200 ease-out">
+      <div
+        class="absolute top-1 right-1 h-12 w-12 p-2 rounded-full center duration-300 hover:bg-white hover:text-red-500 cursor-pointer"
+        id="aboutPopupHide" onclick="hideAboutPagePopup()">
+        <i class="fa-solid fa-xmark fa-xl hover:scale-115"></i>
+      </div>
+      <div class="pt-10 h-full poppins-thin text-lg text-black text-center center" id="aboutPopupText">
+        <!-- Text will appear here dynamically -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+<footer class="bg-gray-900 text-white py-6">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+    <div class="text-center md:text-left">
+      <h2 class="text-xl font-semibold">Ahshanul Haque</h2>
+      <p class="text-gray-400 text-sm">
+        Web Developer | Passionate about coding
+      </p>
+    </div>
+
+    <div class="center flex-col mt-4 md:mt-0 text-[11px] md:text-[15px]">
+      <div class="text-gray-500">Quick access</div>
+      <div class="center gap-3 md:gap-5 mt-2 md:mt-0">
+        <a href="index.html" class="hover:text-blue-400">Home</a>
+        <a href="about.html" class="hover:text-blue-400">About</a>
+        <a href="career.html" class="hover:text-blue-400">Career</a>
+        <a href="projects.html" class="hover:text-blue-400">Projects</a>
+        <a href="skills.html" class="hover:text-blue-400">Skills</a>
+        <a href="acheivement.html" class="hover:text-blue-400">Acheivement</a>
+        <a href="contact.html" class="hover:text-blue-400">Contact</a>
+      </div>
+    </div>
+
+    <div class="mt-4 md:mt-0">
+      <p class="text-gray-400 text-sm">
+        © 2025 Ahshanul Haque. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
 </html>
